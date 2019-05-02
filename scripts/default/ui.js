@@ -32,6 +32,9 @@ $(document).ready(function() {
 			return false;
 	});
 
+	$('.lang-btn').click(function(){
+		$('.lang-nav').slideToggle();
+	});
 
   /* ==========================================================================
     * 共用
