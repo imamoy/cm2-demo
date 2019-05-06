@@ -1,0 +1,190 @@
+/* ==========================================================================
+		index
+ ==========================================================================*/
+#home
+	.l-half
+		&:nth-child(2)
+			.l-list
+				align-items: center
+				+mb(70px)
+			.l-list_text
+				.f-subTitle
+					margin-top: 0
+				.f-subTitle,p
+					margin-bottom: 0
+				p
+					margin-top: 10px
+			.l-list_icon
+				+inline-flex
+				justify-content: center
+				align-items: center
+				+flex(0 0 120px)
+				margin-right: 10px
+				
+		+min-notebook
+			&:first-child,&:nth-child(2)
+				min-height: 90vh
+			&:first-child
+				.text
+					padding-right: 12%
+					min-height: calc(70vh - 21vh)
+				.breck-pic
+					top: 13%
+					right: -5%
+					.pic
+						> *
+							height: 70vh
+			&:nth-child(2)
+				.bg
+					bottom: -20%
+					>img
+						width: 40vw
+
+		+min-padpro
+			&:first-child
+				position: relative
+				.text
+					min-height: calc(60vh - 12vh)
+				.breck-pic
+					position: absolute
+					.pic
+						> *
+							width: auto
+			&:nth-child(2)
+				position: relative
+				z-index: 1
+				.bg
+					display: block
+					position: absolute
+					right:	0
+					bottom: -20%
+					opacity: .8
+					z-index: -1
+				> *
+					height: 90%
+				.iconList,.text
+					min-height: 60vh
+				.text
+					padding: 0 5%
+				.l-list
+					&:first-child
+						margin-top: 20px
+					&:nth-child(2)
+						margin-left: 15% 
+					&:last-child
+						margin-bottom: 0
+		+max-padpro
+			&:first-child
+				.text
+					padding-left: 6%
+					padding-right: 0
+					p
+						padding-right: 18%
+				.breck-pic
+					top: 14%
+					right: 0
+					.pic
+						> *
+							height: 58vh
+			&:nth-child(2)
+				.iconList
+					padding-left: 5.8%
+				.l-list
+					margin-bottom: 40px
+				.bg
+					>img
+						width: 60vw
+		+max-pad
+			&:first-child
+				.main-title
+					br
+						display: none
+				.text
+					p
+						width: 60%
+				.breck-pic
+					position: static
+					text-align: right
+					padding-right: 6%
+					margin-top: -20%
+					.pic 
+						> *
+							height: 40vw
+			&:nth-child(2)
+				position: relative
+				.text
+					padding-left: 6%
+				.main-title
+					br
+						display: none
+				.bg
+					order: 3
+					position: absolute
+					z-index: -1
+					bottom: 0
+					right: 0
+				.iconList
+					+flexbox
+					+flex-wrap(wrap)
+					margin-top: 40px
+		+max-phone
+			&:first-child
+				.text
+					padding: 0
+					p
+						width: 100%
+						padding-right: 0
+				.breck-pic
+					margin-top: 40px
+			&:nth-child(2)
+				.text
+					padding: 0
+				
+				.iconList
+					margin-top: 20px
+				.l-list_icon
+					flex: 0 0 100px
+				.l-list_text
+					width: 100%
+				.bg
+					> *
+						height: 90vw
+	.l-card_box
+		+min-pc
+			.slider_qty3
+				margin: 0 -20px
+		+max-padpro
+			.slider_qty3
+				padding: 0 30px
+			
+	.l-card
+		table
+			width: 100%
+			margin: 16px 0 10px
+			td
+				vertical-align: top
+				text-align: center
+				color: $gary-lg
+				border-right: 1px solid $line-color-lg
+				&:first-child,&:nth-child(2)
+					width: 30%
+				&:last-child
+					border: none
+				> *
+					line-height: normal
+				.title
+					font-weight: 300
+					font-size: 15px				
+			.house_num 
+				font-size: 1.3333em
+				margin: 3px 0 5px
+			.house_unit
+				font-size: 12px
+		.other-info
+			font-weight: 300
+			font-size: $font-s
+			> span
+				margin-right: 10px
+		+max-notebook
+			.f-subTitle_l
+				font-size: 22px!important

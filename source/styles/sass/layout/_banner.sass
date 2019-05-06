@@ -1,0 +1,40 @@
+.banner
+    +pageFill
+    position: relative
+    .pic
+        position: relative
+        &::after
+            content: ''
+            display: block
+            width: 100%
+            height: 100%
+            position: absolute
+            left: 0
+            top: 0
+            background-color: rgba(#000,.15)
+    .text
+        +flex-direction(column)
+        width: 100%
+        height: 100%
+        color: #FFF
+        text-align: center
+        padding: 0 20px
+        position: absolute
+        top: 0
+        left: 0
+    .title
+        margin: 0 0 30px
+    .sub
+        font-weight: 300
+    +min-padpro
+        .en
+            font-size: $font-4l * 1.1
+        
+//
+.join-bar
+    background-image: url('images/home/city-bg.jpg')
+    background-position: center
+    text-align: center
+    color: #FFF
+    +p(90px,40px)
+        

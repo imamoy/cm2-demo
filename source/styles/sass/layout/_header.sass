@@ -1,0 +1,200 @@
+/* ==========================================================================
+		header
+ ==========================================================================*/
+#header
+	width: 100%
+	height: 90px
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 99
+	background-color: #fff
+	-webkit-animation-delay: 0.3s
+	animation-delay: 0.3s
+	.container
+		height: 100%
+		+flexbox
+		justify-content: space-between
+		align-items: center
+	.logo
+		width: 240px
+		height: 60px
+		z-index: 1
+		a
+			display: block
+			height: 100%
+			background: url("images/logo.svg") center no-repeat
+	
+	// hamburger btn
+	.menu-toggle
+		display: none
+		width: 30px
+		height: 30px
+		position: absolute
+		top: 50%
+		right: 30px
+		cursor: pointer
+		transform: translateY(-50%)
+		z-index: 99
+		.hamburger
+			display: block
+			width: 30px
+			height: 2px
+			background-color: #000
+			+trans(all)
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			&::before,&::after
+				content: ''
+				display: block
+				width: 30px
+				height: 2px
+				background-color: #000
+				+trans(all)
+				position: absolute
+			&::before
+				top: -8px
+			&::after
+				bottom: -8px
+		&.active
+			.hamburger
+				width: 0
+				&::before
+					top: 0
+					transform: rotate(45deg)
+				&::after
+					bottom: 0
+					transform: rotate(-45deg)
+	.menu
+		+flexbox
+		width: 100%
+		align-items: center
+		justify-content: space-between
+		.nav
+			min-width: 56%
+			> ul
+				+flexbox
+				justify-content: center
+				li
+					font-size: 18px
+					margin: 0 4%
+					&:first-child
+						margin-left: 0
+					&:last-child
+						margin-right: 0
+		.link-nav
+			display: inline-flex
+			align-items: center
+			min-width: 200px
+			> ul
+				li
+					display: inline-block
+					line-height: 1
+					padding: 0 20px
+					&:first-child
+						border-right: 1px solid $line-color
+		.lang-btn
+			display: inline-block
+			font-size: 28px
+			color: $gary-lg
+			position: relative
+			margin-left: 20px
+		.lang-nav
+			display: none
+			width: 100px
+			background-color: #fff
+			position: absolute
+			top: 38px
+			left: 50%
+			transform: translateX(-50%)
+			padding: 10px
+			li
+				width: 100%
+				display: block
+				font-size: 18px
+				text-align: center
+				border: none!important
+				margin: 10px 0!important
+				padding: 0 !important
+	+min-padpro
+		.menu
+			.link-nav
+				min-width: 180px
+			.lang-btn
+				cursor: pointer
+				+trans(color)
+				&:hover
+					color: #ccc
+	+max-padpro
+		.logo
+			width: 190px
+			height: 50px
+		.menu
+			.nav
+				min-width: 50%
+			.lang-btn
+				margin-left: 0
+	+max-pad
+		height: 60px
+		border-bottom: 1px solid $light
+		.logo
+			width: 156px
+			height: 40px
+			position: fixed
+			left: 20px
+			top: calc((60px - 40px) / 2)
+			z-index: 99
+		.menu-toggle
+			display: block
+			right: 20px
+		.menu
+			height: calc(100vh - 60px)
+			max-width: none
+			background-color: #fff
+			flex-direction: column
+			justify-content: flex-start
+			padding: 0 0 30px
+			position: fixed
+			top: 60px
+			right: -100%
+			+trans(right)
+			&::after
+				content: ''
+				width: 100%
+				height: 100%
+				background-color: #000
+				position: absolute
+				top: 0
+				right: -100%
+			&.active
+				right: 0
+				&::after
+					animation: mask-animate .8s ease
+			.nav
+				width: 100%
+				overflow-y: auto
+				> ul
+					align-items: flex-start
+					flex-direction: column
+					margin: 0
+					li
+						width: 100%
+						font-size: 18px
+						line-height: normal
+						border-bottom: 1px solid #EAEAEA
+						margin: 0!important
+						padding: 15px 0
+						> a
+							display: block
+							padding-left: 30px
+		.lang-btn
+			position: fixed!important
+			top: 10px
+			right: 70px
+			z-index: 99
+		.lang-nav
+			top: 20px!important
+			z-index: -1
+
+
