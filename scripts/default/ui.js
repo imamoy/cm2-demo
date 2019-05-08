@@ -76,6 +76,15 @@ $(document).ready(function() {
 						slidesToShow: 1,
 						slidesToScroll: 1
 					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						arrows: false,
+						dots: true,
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
 				}
 			]
 	});
@@ -85,9 +94,13 @@ $(document).ready(function() {
     * page
 	==========================================================================*/
 
-	$('#home').each(function(){
-		
+	$('#about').each(function(){
+		$('.team-item').click(function(){
+			$(this).children('.team-hover').toggleClass('active').parent().siblings().children('.team-hover').removeClass('active');
+		});
 	});
+
+	
 
 
 	/* ==========================================================================
