@@ -1,0 +1,215 @@
+#home .l-half:nth-child(2) .l-list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 70px; }
+  @media screen and (max-width: 991px) {
+    #home .l-half:nth-child(2) .l-list {
+      margin-bottom: 59.5px; } }
+  @media screen and (max-width: 479px) {
+    #home .l-half:nth-child(2) .l-list {
+      margin-bottom: 46.2px; } }
+
+#home .l-half:nth-child(2) .l-list_text .f-subTitle {
+  margin-top: 0; }
+
+#home .l-half:nth-child(2) .l-list_text .f-subTitle, #home .l-half:nth-child(2) .l-list_text p {
+  margin-bottom: 0; }
+
+#home .l-half:nth-child(2) .l-list_text p {
+  margin-top: 10px; }
+
+#home .l-half:nth-child(2) .l-list_icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 120px;
+          flex: 0 0 120px;
+  margin-right: 10px; }
+
+@media screen and (min-width: 1200px) {
+  #home .l-half:first-child, #home .l-half:nth-child(2) {
+    min-height: 90vh; }
+  #home .l-half:first-child .text {
+    padding-right: 12%;
+    min-height: calc(70vh - 21vh); }
+  #home .l-half:first-child .breck-pic {
+    top: 13%;
+    right: -5%; }
+    #home .l-half:first-child .breck-pic .pic > * {
+      height: 70vh; }
+  #home .l-half:nth-child(2) .bg {
+    bottom: -20%; }
+    #home .l-half:nth-child(2) .bg > img {
+      width: 40vw; } }
+
+@media screen and (min-width: 992px) {
+  #home .l-half:first-child {
+    position: relative; }
+    #home .l-half:first-child .text {
+      min-height: calc(60vh - 12vh); }
+    #home .l-half:first-child .breck-pic {
+      position: absolute; }
+      #home .l-half:first-child .breck-pic .pic > * {
+        width: auto; }
+  #home .l-half:nth-child(2) {
+    position: relative;
+    z-index: 1; }
+    #home .l-half:nth-child(2) .bg {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: -20%;
+      opacity: .8;
+      z-index: -1; }
+    #home .l-half:nth-child(2) > * {
+      height: 90%; }
+    #home .l-half:nth-child(2) .iconList, #home .l-half:nth-child(2) .text {
+      min-height: 60vh; }
+    #home .l-half:nth-child(2) .text {
+      padding: 0 5%; }
+    #home .l-half:nth-child(2) .l-list:first-child {
+      margin-top: 20px; }
+    #home .l-half:nth-child(2) .l-list:nth-child(2) {
+      margin-left: 15%; }
+    #home .l-half:nth-child(2) .l-list:last-child {
+      margin-bottom: 0; } }
+
+@media screen and (max-width: 1199px) {
+  #home .l-half:first-child .text {
+    padding-left: 6%;
+    padding-right: 0; }
+    #home .l-half:first-child .text p {
+      padding-right: 18%; }
+  #home .l-half:first-child .breck-pic {
+    top: 14%;
+    right: 0; }
+    #home .l-half:first-child .breck-pic .pic > * {
+      height: 58vh; }
+  #home .l-half:nth-child(2) .iconList {
+    padding-left: 5.8%; }
+  #home .l-half:nth-child(2) .l-list {
+    margin-bottom: 40px; }
+  #home .l-half:nth-child(2) .bg > img {
+    width: 60vw; } }
+
+@media screen and (max-width: 991px) {
+  #home .l-half:first-child .main-title br {
+    display: none; }
+  #home .l-half:first-child .text p {
+    width: 60%; }
+  #home .l-half:first-child .breck-pic {
+    position: static;
+    text-align: right;
+    padding-right: 6%;
+    margin-top: -20%; }
+    #home .l-half:first-child .breck-pic .pic > * {
+      height: 40vw; }
+  #home .l-half:nth-child(2) {
+    position: relative; }
+    #home .l-half:nth-child(2) .text {
+      padding-left: 6%; }
+    #home .l-half:nth-child(2) .main-title br {
+      display: none; }
+    #home .l-half:nth-child(2) .bg {
+      -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
+              order: 3;
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      right: 0; }
+    #home .l-half:nth-child(2) .iconList {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin-top: 40px; } }
+
+@media screen and (max-width: 767px) {
+  #home .l-half:first-child .text {
+    padding: 0; }
+    #home .l-half:first-child .text p {
+      width: 100%;
+      padding-right: 0; }
+  #home .l-half:first-child .breck-pic {
+    margin-top: 40px; }
+  #home .l-half:nth-child(2) .text {
+    padding: 0; }
+  #home .l-half:nth-child(2) .iconList {
+    margin-top: 20px; }
+  #home .l-half:nth-child(2) .l-list_icon {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100px;
+            flex: 0 0 100px; }
+  #home .l-half:nth-child(2) .l-list_text {
+    width: 100%; }
+  #home .l-half:nth-child(2) .bg > img {
+    width: 100%;
+    height: auto; } }
+
+@media screen and (max-width: 479px) {
+  #home .l-half:first-child .breck-pic {
+    margin-top: -10px;
+    padding-right: 0; }
+    #home .l-half:first-child .breck-pic .pic > * {
+      height: auto; } }
+
+@media screen and (min-width: 1441px) {
+  #home .l-card_box .slider_qty3 {
+    margin: 0 -20px; } }
+
+@media screen and (max-width: 1199px) {
+  #home .l-card_box .slider_qty3 {
+    padding: 0 30px; } }
+
+@media screen and (max-width: 479px) {
+  #home .l-card_box .slider_qty3 {
+    padding: 0; }
+  #home .l-card_box .slick-dots {
+    bottom: -10px !important; } }
+
+#home .l-card table {
+  width: 100%;
+  margin: 16px 0 10px; }
+  #home .l-card table td {
+    vertical-align: top;
+    text-align: center;
+    color: #909090;
+    border-right: 1px solid #DFDFE0; }
+    #home .l-card table td:first-child, #home .l-card table td:nth-child(2) {
+      width: 30%; }
+    #home .l-card table td:last-child {
+      border: none; }
+    #home .l-card table td > * {
+      line-height: normal; }
+    #home .l-card table td .title {
+      font-weight: 300;
+      font-size: 15px; }
+  #home .l-card table .house_num {
+    font-size: 1.3333em;
+    margin: 3px 0 5px; }
+  #home .l-card table .house_unit {
+    font-size: 12px; }
+
+#home .l-card .other-info {
+  font-weight: 300;
+  font-size: 16.0px; }
+  #home .l-card .other-info > span {
+    margin-right: 10px; }
+
+@media screen and (max-width: 1440px) {
+  #home .l-card .f-subTitle_l {
+    font-size: 22px !important; } }
+
+@media screen and (max-width: 479px) {
+  #home .l-card {
+    margin-bottom: 30px; } }
