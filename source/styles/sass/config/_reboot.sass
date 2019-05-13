@@ -1,0 +1,136 @@
+*
+  box-sizing: border-box
+
+html,body
+    margin: 0
+    padding: 0
+
+html,body
+	font-size: $base-font-size * 1.1
+	line-height: $base-line-height * 1.1
+	font-family: 'Montserrat','Noto Sans TC', sans-serif
+	color: $gary-dp
+	overflow-x: hidden
+	+max-notebook
+		font-size: 18px
+		line-height: $base-line-height
+	+max-phones
+		font-size: 16px
+	
+a
+	text-decoration: none
+	color: $gary-dp
+	+min-padpro
+		+trans(color)
+		&:hover
+			color: $primary-color
+
+input:focus
+  outline: none
+
+address
+	font-style: normal	
+
+.container
+	box-sizing: border-box
+	width: 100%
+	margin: 0 auto
+	max-width: calc(1440px + (80px * 2))
+	padding: 0 80px
+	margin: 0 auto
+	&.min
+		max-width: calc(1200px + (80px * 2))
+	+max-notebook
+		padding: 0 60px
+		&.min
+			max-width: calc(1200px + (60px * 2))
+	+max-padpro
+		padding: 0 40px
+	+max-pad
+		padding: 0 20px
+
+main > .inner
+	margin-top: 90px
+	min-height: 800px
+	+max-pad
+		margin-top: 60px
+
+.hidden
+	display: none
+
+.pc-hidden
+	+min-padpro
+		display: none
+
+ul,ol
+	&.nostyle,&.slider
+		list-style: none
+		padding-left: 0
+		margin: 0!important
+	
+.jqimgFill
+	width: 100%
+	height: 100%
+
+img
+	max-width: 100%
+	height: auto
+
+.fw700
+    font-weight: 700    
+.fw600
+    font-weight: 600
+.fw400
+    font-weight: 400
+
+
+.f-title_big
+    font-weight: 700
+    +min-pc
+        font-size: $font-4l
+    +max-notebook
+        font-size: $font-4l * .88
+    +max-phone-mid
+        font-size: $font-3l
+
+.f-title_l
+    font-weight: 700
+    +min-padpro
+        font-size: $font-3l * 1.5
+    +max-pad
+        font-size: $font-3l * 1.2
+    +max-phone-mid
+        font-size: $font-3l
+    
+.f-title_m
+    font-weight: 700
+    +min-padpro
+        font-size: $font-3l
+    +max-pad
+        font-size: $font-3l * .9
+    +max-phone-mid
+        font-size: $font-3l * .6
+
+.f-title_s
+    +min-padpro
+        font-size: $font-2l
+    +max-pad
+        font-size: $font-2l * .9
+
+.f-subTitle_l
+    font-style: normal
+    +min-notebook
+        font-size: $font-xl
+    +max-padpro
+        font-size: $font-xl * .9
+    
+
+.f-subTitle
+    font-style: normal
+    +min-padpro
+        font-size: $font-l * 1.2
+    +max-pad
+        font-size: $font-l
+
+.f-text
+    font-size: $font-m
