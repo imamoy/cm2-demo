@@ -25,3 +25,43 @@ mixin house-card(title, imgurl, width_num, num, data_1, data_2, data_3, href)
                 span 烏蘭巴托
                 span |
                 span 傳統租賃
+
+mixin house-card-app(title, imgurl, width_num, num, data_1, data_2, data_3, href)
+    a.l-card(href=href title="房場資訊")
+        .l-card_pic
+            .jqimgFill
+                img(src=imgurl, alt="房產圖片")
+        .l-card_info
+            div.other-info
+                span 烏蘭巴托
+                span   |  
+                span 傳統租賃
+            h3.f-subTitle_l.title=title
+            .progressBar
+                .progressBar_value(style=width_num) 
+                    span.sold.progressBar_num=num
+            table
+                tr
+                    td
+                        .app_feature.flex-row
+                            .icon
+                                i.icon-rental-income-
+                            .detil
+                                .title 租金收益
+                                .house_num=data_1
+                    td
+                        .app_feature.flex-row
+                            .icon
+                                i.icon-market-price
+                            .detil
+                                .title 市價
+                                .house_num=data_2 
+                                .house_unit USD/CM²
+                    td
+                        .app_feature.flex-row
+                            .icon
+                                i.icon-rental-money
+                            .detil
+                                .title 已收租金
+                                .house_num=data_3 
+                                .house_unit USD

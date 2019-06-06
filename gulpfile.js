@@ -20,25 +20,25 @@ gulp.task('pug', function buildHTML() {
 
 gulp.task('css-plugins', function () {
     return gulp
-      .src("./source/styles/plugins/**/*")
+      .src("./source/v2/styles/plugins/**/*")
       .pipe($.plumber())
-      .pipe(gulp.dest("./project/styles/plugins/"))
+      .pipe(gulp.dest("./project/v2/styles/plugins/"))
       .pipe(browserSync.stream());
 });
 
 gulp.task('icon', function () {
     return gulp
-      .src("./source/styles/fonts/**/*")
+      .src("./source/v2/styles/fonts/**/*")
       .pipe($.plumber())
-      .pipe(gulp.dest("./project/styles/fonts/"))
+      .pipe(gulp.dest("./project/v2/styles/fonts/"))
       .pipe(browserSync.stream());
 });
 
 gulp.task('images', function () {
     return gulp
-      .src("./source/styles/images/**/*")
+      .src("./source/images/v2/**/*")
       .pipe($.plumber())
-      .pipe(gulp.dest("./project/styles/images/"))
+      .pipe(gulp.dest("./project/images/v2/"))
       .pipe(browserSync.stream());
 });
 
@@ -47,7 +47,7 @@ gulp.task('sass', function () {
         autoprefixer({ browsers: ['last 2 version'] }) //postcss 使用的套件
     ];;
 
-    return gulp.src('./source/styles/**/*.sass')
+    return gulp.src('./source/v2/styles/**/*.sass')
     .pipe($.plumber())
     .pipe($.sass({
         outputStyle: 'nested',
@@ -55,15 +55,15 @@ gulp.task('sass', function () {
       }).on('error', $.sass.logError))
     // 編譯完成
     .pipe($.postcss(plugins))
-    .pipe(gulp.dest('./project/styles/'))
+    .pipe(gulp.dest('./project/v2/styles/'))
     .pipe(browserSync.stream());
 });
 
 
 gulp.task('js', function(){
-    return gulp.src('./source/scripts/**/*.js')
+    return gulp.src('./source/v2/scripts/**/*.js')
     .pipe($.plumber())
-    .pipe(gulp.dest('./project/scripts/'))
+    .pipe(gulp.dest('./project/v2/scripts/'))
     .pipe(browserSync.stream());
 })
 
@@ -79,11 +79,11 @@ gulp.task('browser-sync', function() {
 
 gulp.task('watch', function () {
     gulp.watch('./source/html/**/*.pug', ['pug']);
-    gulp.watch('./source/styles/plugins/**/*', ['css-plugins']);
-    gulp.watch('./source/styles/font/**/*', ['icon']);
-    gulp.watch('./source/styles/images/**/*', ['images']);
-    gulp.watch('./source/styles/**/*.sass', ['sass']);
-    gulp.watch('./source/scripts/**/*.js', ['js']);
+    gulp.watch('./source/v2/styles/plugins/**/*', ['css-plugins']);
+    gulp.watch('./source/v2/styles/font/**/*', ['icon']);
+    gulp.watch('./source/images/v2/**/*', ['images']);
+    gulp.watch('./source/v2/styles/**/*.sass', ['sass']);
+    gulp.watch('./source/v2/scripts/**/*.js', ['js']);
 });
 
 gulp.task('default', ['pug', 'images', 'icon', 'css-plugins', 'sass', 'js', 'browser-sync', 'watch']);

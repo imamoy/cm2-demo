@@ -1,0 +1,287 @@
+#app
+    .page-banner
+        .text
+            text-align: left!important
+        .title
+            font-size: 
+            line-height: normal
+        .container
+            height: 100%
+            +flexbox
+            flex-direction: column
+            justify-content: center
+    .l-card_info
+        > .title
+            color: $secondary-color
+        .other-info
+            color: $gary-lg
+        table
+            width: 100%
+            margin-top: 10px
+            td
+                min-width: 25%
+                &:first-child
+                    .app_feature
+                        padding-left: 0
+                &:last-child
+                    .app_feature
+                        padding-right: 0
+                        border: none
+    .app_feature
+        text-align: center
+        align-items: center
+        justify-content: center
+        border-right: 1px solid $line-color
+        padding: 0 10px
+        .detil
+            .title
+                font-weight: 400
+                color: $gary-lg
+        .house_num
+            font-weight: 600
+            color: $secondary-color
+            line-height: 1.3
+        .house_unit
+            line-height: 1
+        .icon
+            margin-right: 16px
+            i
+                &::before
+                    margin: 0
+    +max-phone
+        .app_feature
+            .icon
+                font-size: 40px!important
+                margin: 0 auto!important
+.app-hot_info
+    +pt(50px)
+    position: relative
+    &::after
+        content: ''
+        display: table
+        width: 1px
+        height: 120px
+        background-color: $line-color
+        margin: 50px auto 0
+    .container
+        +flexbox
+        +max-pad
+            flex-wrap: wrap
+            
+    .left,.right
+        margin: 0 40px
+    .left
+        max-width: 584px
+        margin-left: 0
+    .right
+        width: calc(50% - 40px)
+        margin-right: 0
+        p
+            margin-top: 10px
+        .btn
+            float: right
+            font-size: 1.16em
+            font-weight: 300
+            min-width: 200px
+    
+    .advantage_block
+        display: inline-flex
+        position: relative
+        margin: 0 0 20px
+        > *
+            padding: 0 40px 10px
+            &:first-child
+                padding-left: 0
+            &:last-child
+                border-left: 1px solid $line-color
+                padding-right: 10px
+                padding-right: 0
+        &::before,&::after
+            content: ''
+            background-color: $line-color
+            position: absolute
+            left: 0
+            right: 0
+            bottom: 0
+            margin: 0 auto
+        &::before
+            width: 100%
+            height: 1px
+        .icon
+            flex: 0 0 52px
+            font-size: 52px
+            line-height: 52px
+            margin-right: 14px
+            &::before
+                margin: 0
+        p
+            line-height: normal
+    +max-pad
+        &::after
+            height: 50px
+            margin: 40px auto 0
+        .left,.right
+            width: 100%
+            margin: 10px 0
+        .left
+            max-width: none
+        .advantage_block
+            +flexbox
+            width: 100%
+            > *
+                width: 50%
+                padding: 0 20px
+                justify-content: flex-start!important
+                &:first-child
+                    padding-left: 20px
+        .right
+            p
+                padding: 0 20px
+            .btn
+                display: table
+                float: none
+                margin: 30px auto 0
+        .advantage_list
+            li
+                padding: 0 20px
+    +max-phone-mid
+        padding-top: 20px
+        .advantage_block
+            > *
+                flex-direction: column
+                width: 100%
+                border-left: none
+                padding: 0 10px!important
+            p
+                margin-top: 10px
+
+        .advantage_list
+            li
+                padding: 0 8%
+.new-arrival
+    +flexbox
+    position: relative
+    .pic_box
+        max-width: 818px
+        li 
+            height: 26.563vw
+            min-height: 500px
+    .l-card_box
+        background-color: #fff
+        box-shadow: -2px 5px 30px 0 #ccc
+        position: relative
+        +p(60px,46px)
+        +ml(-100px)
+    .l-card_info
+        max-width: 720px
+        > .title
+            font-size: 2.4em
+            line-height: 1.4
+            margin: 0 0 10px
+        table
+            width: calc(100% + 40px);
+            margin: 10px -10px 0;
+            td
+                min-width: 30%!important
+    .other-info
+        font-size: 1.2em
+    .app_feature
+        margin-top: 14px
+        .icon
+            font-size: 54px
+            margin-right: 20px!important
+        .detil
+            .title
+                font-size: 1em
+                line-height: normal
+        .house_num
+            font-size: 1.5em
+        .house_unit
+            font-size: 12px
+
+    .slick-dots
+        position: absolute
+        li
+            height: auto!important
+            min-height: auto!important
+    +min-padpro
+        align-items: center
+        .pic_box
+            width: 55%
+        .l-card_box
+            width: 55%
+        .slick-dots
+            right: -80%
+            bottom: 10px
+            text-align: right
+    +padpro
+        .app_feature
+            .icon
+                font-size: 40px
+                margin-right: 0
+        .l-card_info
+            > .title
+                font-size: 2.2em
+    +max-padpro
+        .l-card_box
+            padding: 40px 40px
+            
+    +max-pad
+        flex-direction: column
+        align-items: center
+        .pic_box,.l-card_box
+            width: 90%
+        .pic_box
+            max-width: none
+            li
+                min-height: 380px
+        .l-card_box
+            margin-left: 0
+        .l-card_info
+            > .title
+                font-size: 1.8em
+    +max-phone
+        .pic_box
+            li
+                min-height: 260px
+        .l-card_box
+            padding: 20px
+        .app_feature
+            .icon
+                display: none
+.all-estate
+    ul
+        max-width: calc(1200px + 40px)
+        justify-content: space-around
+        margin: 0 auto!important
+    .l-card_info
+        > .title
+            width: 100%
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+    .app_feature
+        .icon
+            font-size: 44px
+            line-height: normal
+        .detil
+            .title
+                font-size: 17px
+                line-height: normal
+        .house_num
+            font-size: 1.444444em
+        .house_unit
+            font-size: 10px
+    +min-pad
+        li
+            width: 50%
+    +max-pad
+        .app_feature
+            .icon
+                display: none
+    +max-phone
+        li
+            width: 100%
+            padding: 0 5%
+    
+        
