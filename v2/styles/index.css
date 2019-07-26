@@ -177,6 +177,9 @@
   #home .l-card_box .slick-dots {
     bottom: -10px !important; } }
 
+#home .l-card .l-card_pic {
+  position: relative; }
+
 #home .l-card .l-card_info .title {
   white-space: nowrap;
   overflow: hidden;

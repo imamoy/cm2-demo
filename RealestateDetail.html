@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <title>CM Square</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" type="image/x-icon" href="images/v2/web-icon.ico">
+    <link rel="stylesheet" type="text/css" href="v2/styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Montserrat:300,400,600,700|Noto+Sans+TC:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="v2/styles/fonts/css/fontello.css">
+    <link rel="stylesheet" type="text/css" href="v2/styles/plugins/animate.css">
+    <link rel="stylesheet" type="text/css" href="v2/styles/plugins/slick.css">
+    <link rel="stylesheet" type="text/css" href="v2/styles/plugins/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="v2/styles/common.css">
+    <link rel="stylesheet" type="text/css" href="v2/styles/realestate.css">
+  </head>
+  <body>
+    <header class="animated fadeInDown" id="header">
+      <div class="container">
+        <div class="menu-toggle">
+          <div class="hamburger"></div>
+        </div>
+        <div class="menu">
+          <div class="logo app"><a href="./">
+              <h1 class="hidden">CM Square</h1></a></div>
+          <div class="nav">
+            <ul class="nostyle">
+              <li><a href="index.html" title="首頁">首頁</a></li>
+              <li><a href="" title="我的房產">我的房產</a></li>
+              <li><a href="" title="我的錢包">我的錢包</a></li>
+              <li><a href="about.html" title="關於我們">關於我們</a></li>
+            </ul>
+          </div>
+          <div class="link-nav">
+            <ul class="nostyle">
+              <li><a href="" title="登入">登入</a></li>
+              <li><a href="" title="註冊">註冊</a></li>
+            </ul>
+            <div class="lang-btn"><span class="icon"><i class="icon-earth"></i></span>
+              <ul class="lang-nav nostyle">
+                <li><a href="" title="中文">中文</a></li>
+                <li><a href="" title="English">English</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="realestate">
+      <div class="inner">
+        <div class="realestateBanner">
+          <div class="item"><img src="images/v2/RealestateDetail/realestate_p1.jpg" alt="房屋照片"></div>
+          <div class="item"><img src="images/v2/RealestateDetail/realestate_p2.jpg" alt="房屋照片"></div>
+          <div class="item"><img src="images/v2/RealestateDetail/realestate_p3.jpg" alt="房屋照片"></div>
+          <div class="item"><img src="images/v2/RealestateDetail/realestate_p4.jpg" alt="房屋照片"></div>
+          <div class="item"><img src="images/v2/RealestateDetail/realestate_p5.jpg" alt="房屋照片"></div>
+        </div>
+        <article class="realestate_inner">
+          <div class="container min">
+            <div class="realestate_card">
+              <div class="top">
+                <div class="icon"><i class="icon-market-price"></i></div>
+                <div class="text t-center">
+                  <p>1.0577</p>
+                  <p>CM2T/CM²</p>
+                  <p>≈ 0.11 USD</p>
+                </div>
+              </div>
+              <div class="middle">
+                <div class="count">
+                  <div class="minus">－</div>
+                  <div class="value">
+                    <input type="text" min="0" max="1024898" value="1024898">
+                    <div class="unit">CM²</div>
+                  </div>
+                  <div class="add">＋</div>
+                </div>
+                <div class="count-math t-center">
+                  <p><span class="t-primary">1</span> CM² = <span class="t-primary">1.06</span> CM2T</p>
+                  <p><span class="f10">≈ 0.00 USD</span></p>
+                </div>
+                <button class="btn btn-gradient" href="" title="購買">購買</button>
+              </div>
+              <div class="error"><span class="t-red">購買的 CM² 超過總和</span></div>
+              <div class="btm">
+                <div class="flex-row t-center">
+                  <p class="item aval-balance">可用餘額<br>0.00 CM2T</p>
+                  <p class="item aval-balance">持有數量<br>0 CM²</p>
+                </div>
+              </div>
+            </div>
+            <div class="realestate_content">
+              <div class="property-heading">
+                <h2 class="sub">烏蘭巴托 | 傳統租賃</h2>
+                <h1 class="title t-gradient">國家公園首席美廈.柏盛豪園</h1>
+                <div class="flex-row jc-space-between ai-center mb-40"><a class="realestate_map" href="" target="_blank" rel="noopener">蒙古國, 烏蘭巴托, 巴彥珠爾赫區, 庫倫街26號, 建物地822號, 柏盛豪園</a>
+                  <div class="social-media">
+                    <button data-social="facebook"><i class="icon-facebook"></i></button>
+                    <button data-social="line"><i class="icon-line"></i></button>
+                    <button data-social="googleplus"><i class="icon-gplus"></i></button>
+                  </div>
+                </div>
+              </div>
+              <ul class="propertyNav cutover nostyle">
+                <li class="active"><a href="#property1">地產細節</a></li>
+                <li><a href="#property2">交易概況</a></li>
+                <li><a href="#property3">相關文件</a></li>
+              </ul>
+              <div class="propertyInfo wow fadeInUp">
+                <div class="cutover-in show" id="property1">
+                  <div class="part wow fadeInUp">
+                    <h3 class="title">城市概述</h3>
+                    <p>烏蘭巴托位於蒙古高原中部，占蒙古國人口將近一半，是蒙古國最大的城市，為政治、交通中心。市區沿著土拉河布局，呈狹長形，西部有烏蘭巴托成吉思汗國際機場，南面有蒙古的聖山。市中心有國家宮和成吉思汗廣場。連接中俄的蒙古縱貫鐵路貫穿烏蘭巴托，北至色楞格省蘇赫巴托爾，南抵中國內蒙古自治區二連浩特市是歐亞俄三國的物流樞紐。多數外國投資人集中於烏蘭巴托，投資礦業與貿易相關產業，豐富的礦業資源提供烏蘭巴托豐沛的活力，市民平均年齡非常低，30 歲以下的人口高達 70%，有「世界上最年輕的城市」之名。</p>
+                  </div>
+                  <div class="part wow fadeInUp">
+                    <h3 class="title">投資亮點</h3>
+                    <ul class="nostyle l-checkList">
+                      <li class="check-list">鄰近烏蘭巴托國家公園</li>
+                      <li class="check-list">法式料理、墨西哥餐廳進駐</li>
+                      <li class="check-list">蘇赫巴托爾頂尖豪宅</li>
+                      <li class="check-list">8%以上預期租金收益</li>
+                      <li class="check-list">室內健身房、瑜珈及有氧教室</li>
+                      <li class="check-list">海外包租代管輕鬆投資</li>
+                    </ul>
+                    <div class="imgbox">
+                      <figure><img src="images/v2/RealestateDetail/realestate_p4.jpg" alt="房產圖片">
+                        <p>豐富的夜生活</p>
+                      </figure>
+                      <figure><img src="images/v2/RealestateDetail/realestate_p3.jpg" alt="房產圖片">
+                        <p>Tom N Tom 國家公園分店</p>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="part wow fadeInUp">
+                    <h3 class="title">摘要</h3>
+                    <p>柏盛豪園正位於烏蘭巴托國家公園旁，具備便利的交通與優質的假日休憩場所，國家公園是烏蘭巴托市民周末享受親子時光的首選，周邊有豐富的商販與購物街，公園內可以進行慢跑或單車等運動，亦有蒙古傳統表演節目以及傳統美食進駐。</p>
+                  </div>
+                  <div class="part l-half_box l-half wow fadeInUp">
+                    <div class="item l-half_w50">
+                      <h3 class="title mt-0">房屋格局</h3>
+                      <div class="l-half">
+                        <ul class="nostyle l-half_w50">
+                          <li class="l-label_text">
+                            <h5 class="label">客廳</h5>
+                            <p>1</p>
+                          </li>
+                          <li class="l-label_text">
+                            <h5 class="label">廚房</h5>
+                            <p>1</p>
+                          </li>
+                          <li class="l-label_text">
+                            <h5 class="label">餐廳</h5>
+                            <p>3</p>
+                          </li>
+                        </ul>
+                        <ul class="nostyle l-half_w50">
+                          <li class="l-label_text">
+                            <h5 class="label">廚房</h5>
+                            <p>1</p>
+                          </li>
+                          <li class="l-label_text">
+                            <h5 class="label">陽台</h5>
+                            <p>2</p>
+                          </li>
+                          <li class="l-label_text">
+                            <h5 class="label">衛浴</h5>
+                            <p>2</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="item l-half_w50">
+                      <h3 class="title mt-0">建物詳情</h3>
+                      <div class="l-half">
+                        <ul class="nostyle">
+                          <li class="l-label_text">
+                            <h5 class="label">車位</h5>
+                            <p>X</p>
+                          </li>
+                          <li class="l-label_text">
+                            <h5 class="label">總戶</h5>
+                            <p>104 戶</p>
+                          </li>
+                          <li class="l-label_text">
+                            <h5 class="label">用途規劃</h5>
+                            <p>住宅</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="part realestate_stress wow fadeInUp">
+                    <h3 class="title">投資回報預估*</h3>
+                    <div class="advantage_block flex-row">
+                      <div class="flex-row ai-center"><span class="icon icon-rental-money"></span>
+                        <h5 class="title">租金收益</h5>
+                        <p>每年<span class="num">7~8%</span></p>
+                      </div>
+                      <div class="flex-row ai-center"><span class="icon icon-rental-income-"></span>
+                        <h5 class="title">資本增長</h5>
+                        <p><span class="num">~12-18%</span>(3年)</p>
+                      </div>
+                    </div><em class="note">*投資回報將根據實質情況有所不同</em>
+                  </div>
+                </div>
+                <div class="cutover-in" id="property2">
+                  <div class="part realestate_price wow fadeInUp">
+                    <div class="flex-row jc-space-between">
+                      <h3 class="title">價錢細節</h3>
+                      <p>10.00% CM² 售出 (102500 / 1025000)</p>
+                    </div>
+                    <div class="progressBar">
+                      <div class="progressBar_value" style="width:10%;"> <span class="sold progressBar_num">10%</span></div>
+                    </div>
+                  </div>
+                  <div class="part l-half l-half_box wow fadeInUp">
+                    <div class="item l-half_w50">
+                      <h3 class="title mt-0">建物詳情</h3>
+                      <div class="l-half">
+                        <ul class="nostyle">
+                          <li class="l-label_text">
+                            <h5 class="label">履約日期</h5>
+                            <p>2024/05/20</p>
+                            <div class="tooltip" data-tooltip="物業到達履約日期後將有 6 個月的清算期。於此期間團隊將於實體市場尋找適當的買家透過適當的價格售出該物業並完成所有文件程序上的作業。扣除相關費用後，最後根據平台用戶所持有的 CM2 數量，按比例分配 CM2。"><i class="icon-info"></i></div>
+                          </li>
+                          <li class="l-label_text">
+                            <h5 class="label">預期租金</h5>
+                            <p>$9.23 USD/m²</p>
+                          </li>
+                          <li class="l-label_text">
+                            <h5 class="label">預期租金</h5>
+                            <p>$9.23 USD/m²</p>
+                            <div class="tooltip" data-tooltip="租金收益將於每個月 15 號發派到您的 CM2T 帳號或特定的加密貨幣電子錢包, 根據您所持的 CM2 的數量獲取對應比例的租金收益 。"><i class="icon-info"></i></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="item l-half_w50">
+                      <h3 class="title mt-0">收入細節</h3>
+                      <div class="l-half">
+                        <ul class="nostyle">
+                          <li class="l-label_text">
+                            <h5 class="label">託管金額</h5>
+                            <p>0.00 USD </p>
+                            <div class="tooltip" data-tooltip="內容"><i class="icon-info"></i></div>
+                          </li>
+                          <li class="l-label_text">
+                            <h5 class="label">投資回報</h5>
+                            <p>1.35%</p>
+                            <div class="tooltip" data-tooltip="內容"><i class="icon-info"></i></div>
+                          </li>
+                          <li class="l-label_text">
+                            <h5 class="label">已收租金</h5>
+                            <p>1,568.40 USD</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="part wow fadeInUp">
+                    <h3 class="title">交易記錄</h3>
+                    <div class="trading-record">
+                      <div class="record_item"><span class="date">Jul 11 </span><span>user****76 購買 5,100 CM² @ 0.14 USD/CM²</span>
+                        <div class="record_buy t-red">731.90 <span class="currency">USD</span></div>
+                      </div>
+                      <div class="record_item"><span class="date">Jul 11 </span><span>user****76 購買 5,100 CM² @ 0.14 USD/CM²</span>
+                        <div class="record_buy t-red">731.90 <span class="currency">USD</span></div>
+                      </div>
+                      <div class="record_item"><span class="date">Jul 11 </span><span>user****76 購買 5,100 CM² @ 0.14 USD/CM²</span>
+                        <div class="record_buy t-red">731.90 <span class="currency">USD</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="part realestate_stress my_realestate wow fadeInUp">
+                    <h3 class="title">我的投資</h3>
+                    <div class="advantage_block flex-row">
+                      <div class="flex-row ai-center"><span class="icon icon-rental-money"></span>
+                        <h5 class="title">投資回報</h5>
+                        <p class="t-primary">0.00%</p>
+                      </div>
+                      <div class="flex-row ai-center"><span class="icon icon-rental-income-"></span>
+                        <h5 class="title">租金收入</h5>
+                        <p class="t-primary">0.00 USD <span class="currency">(0.00 CM2T)</span></p>
+                      </div>
+                    </div>
+                    <div class="my_buylist">
+                      <div class="buylist_item"><span>購買</span><span>0.00 CM²</span>
+                        <div class="record_buy t-red">0.00 USD <span class="currency">(0.00 CM2T)</span></div>
+                      </div>
+                      <div class="buylist_item"><span>小計</span><span>0.00 CM²</span>
+                        <div class="record_buy t-red">0.00 USD <span class="currency">(0.00 CM2T)</span></div>
+                      </div>
+                      <div class="buylist_item buylist_total"><span>小計</span><span>0.00 CM²</span>
+                        <div class="record_buy t-red">0.00 USD <span class="currency">(0.00 CM2T)</span></div>
+                      </div>
+                    </div>
+                    <div class="my_buyRecord">
+                      <p>目前沒有投資記錄</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cutover-in" id="property3">
+                  <div class="part wow fadeInUp">
+                    <h3 class="title">相關文件</h3>
+                    <div class="download_list">
+                      <div class="download_item">
+                        <h5 class="file_name">房產契約 (英)</h5><a class="file_download" href="" download/>下載</a>
+                      </div>
+                      <div class="download_item">
+                        <h5 class="file_name">房產契約 (繁)</h5><a class="file_download" href="" download/>下載</a>
+                      </div>
+                      <div class="download_item">
+                        <h5 class="file_name">房產契約 (蒙)</h5><a class="file_download" href="" download/>下載</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <nav class="footer-nav">
+      <ul class="nostyle">
+        <li><a href="" title="常問問題">常問問題</a></li>
+        <li><a href="" title="使用教學">使用教學</a></li>
+        <li><a href="" title="關於我們">關於我們</a></li>
+        <li><a href="" title="聯繫我們">聯繫我們</a></li>
+      </ul>
+    </nav>
+    <footer id="footer">
+      <address class="container">
+        <div class="company">
+          <div class="footer-logo"></div>
+          <div class="link-nav"><a class="item" href=""><i class="icon-facebook"></i></a><a class="item" href=""><i class="icon-twitter"></i></a><a class="item" href=""><i class="icon-linkedin"></i></a><a class="item" href=""><i class="icon-medium"></i></a><a class="item" href=""><i class="icon-paper-plane"></i></a></div>
+          <div class="copyright">© CM Square Holdings Ltd 2019。<br>All rights reserved.</div>
+        </div>
+        <div class="address">
+          <div class="item">
+            <div class="title">HK Office</div><a href="https://goo.gl/maps/xjHvLc6irFQ4p5uV8" title="HK Office" target="_blank">Unit 5C, West Gate Tower, 7 Wing Hong Street,Kowloon, Hong Kong</a>
+          </div>
+          <div class="item">
+            <div class="title">SG Office</div><a href="https://goo.gl/maps/LphJ4PXsJ2rkwPM4A" title="SG Office" target="_blank">10 Anson Road #05-17 International Plaza</a>
+          </div>
+          <div class="item">
+            <div class="title">TW Office</div><a href="https://goo.gl/maps/LphJ4PXsJ2rkwPM4A" title="TW Office" target="_blank">6F., No.188, Sec. 5, Nanjing E. Rd., Songshan Dist., Taipei City 105, Taiwan (R.O.C.)</a>
+          </div>
+          <div class="item">
+            <div class="title">MG Office</div><a href="https://goo.gl/maps/LphJ4PXsJ2rkwPM4A" title="MG Office" target="_blank">Mongolia Ulaanbaatar Bayanzurkh district 18r khoroo 13r khoroolol Building 39 No.2</a>
+          </div>
+        </div>
+      </address>
+    </footer>
+    <script src="v2/scripts/default/jquery.min.js"></script>
+    <script src="v2/scripts/default/jquery.easing.1.3.js"></script>
+    <script src="v2/scripts/plugins/imgLiquid.js"></script>
+    <script src="v2/scripts/plugins/wow.js"></script>
+    <script src="v2/scripts/plugins/slick.js"></script>
+    <script src="v2/scripts/plugins/goodshare.min.js"></script>
+    <script src="v2/scripts/default/ui.js"></script>
+  </body>
+</html>

@@ -48,6 +48,23 @@ $(document).ready(function() {
   /* ==========================================================================
     * 共用
 	==========================================================================*/
+
+	$("a.anchor").on('click', function(event) {
+
+		if (this.hash !== "") {
+		  event.preventDefault();
+	
+		  // Store hash
+		  var hash = this.hash;
+
+		  $('html, body').animate({
+			scrollTop: $(hash).offset().top - 90
+		  }, 800, function(){
+	   
+			window.location.hash = hash;
+		  });
+		} // End if
+	});
 	
 	$('.l-chartNews .slider').slick({
 		fade: true,
@@ -97,6 +114,23 @@ $(document).ready(function() {
 		autoplaySpeed: 5000
 	});
 
+	$('.banner-slider .slider').slick({
+		fade: true,
+		dots: false,
+		arrows: true,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					dots: true,
+					arrows: false
+				}
+			}
+		]
+	});
+
 	/* ==========================================================================
     * page
 	==========================================================================*/
@@ -107,6 +141,50 @@ $(document).ready(function() {
 		});
 	});
 
+	$('#seminar').each(function(){
+		$('#header').addClass('nobg');
+		$(window).scroll(function (){
+			if ($(this).scrollTop() < 500) {
+				$('#header').addClass('nobg');
+			} else {
+				$('#header').removeClass('nobg');
+			}
+		});
+		if (jQuery(window).width() < 991) { 
+			$('.seminar-advantage .slider').slick({
+				dots: false,
+				infinite: false,
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				responsive: [
+					{
+						breakpoint: 767,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					}
+				]
+			});
+		}
+
+		$('.seminar_news .slider').slick({
+			dots: false,
+			arrows: true,
+			slidesToShow: 2,
+			slidesToScroll: 2,
+			initialSlide: 1,
+			responsive: [
+				{
+					breakpoint: 991,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
+	});
 	
 
 
@@ -134,6 +212,27 @@ $(document).ready(function() {
 	     });
 			});
 	  }
+	});
+
+	/* ==========================================================================
+			頁籤
+	==========================================================================*/
+
+	$(function() {
+		var _showTab = 0;
+		var $defaultLi = $('ul.cutover li').eq(_showTab).addClass('active');
+		$($defaultLi.find('a').attr('href')).siblings().removeClass('show');
+
+		$('ul.cutover li').click(function() {
+			var $this = $(this),
+				_clickTab = $this.find('a').attr('href');
+			$this.addClass('active').siblings('.active').removeClass('active');
+			$(_clickTab).stop(false, true).addClass('show').siblings().removeClass('show');
+
+			return false;
+		}).find('a').focus(function() {
+			this.blur();
+		});
 	});
 
   /* ==========================================================================

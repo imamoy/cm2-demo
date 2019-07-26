@@ -203,146 +203,165 @@
       .app-hot_info .advantage_list li {
         padding: 0 8%; } }
 
-.new-arrival {
+.new-arrival .slick-dots {
+  position: absolute;
+  bottom: 10px; }
+  .new-arrival .slick-dots li {
+    height: auto !important;
+    min-height: auto !important; }
+
+.new-arrival .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative; }
-  .new-arrival .pic_box {
-    max-width: 818px; }
-    .new-arrival .pic_box li {
-      height: 25vw; }
-  .new-arrival .l-card_box {
-    background-color: #fff;
-    -webkit-box-shadow: -2px 5px 30px 0 #ccc;
-            box-shadow: -2px 5px 30px 0 #ccc;
-    position: relative;
-    padding: 3.5% 3% 3%;
-    margin-left: -100px; }
-    @media screen and (max-width: 991px) {
-      .new-arrival .l-card_box {
-        margin-left: -50px; } }
-  .new-arrival .l-card_info {
-    max-width: 720px; }
-    .new-arrival .l-card_info > .title {
-      font-size: 2.2em;
-      line-height: 1.4;
-      margin: 0 0 14px; }
-    .new-arrival .l-card_info table {
-      width: calc(100% + 40px);
-      margin: 16px -10px 0; }
-      .new-arrival .l-card_info table td {
-        min-width: 30% !important; }
-  .new-arrival .app_feature .icon {
-    font-size: 54px;
-    margin-right: 20px !important; }
-  .new-arrival .app_feature .detil .title {
-    font-size: 1em;
-    line-height: normal; }
-  .new-arrival .app_feature .house_num {
-    font-size: 1.4em; }
-  .new-arrival .app_feature .house_unit {
-    font-size: 12px; }
-  .new-arrival .slick-dots {
-    position: absolute;
-    bottom: 10px; }
-    .new-arrival .slick-dots li {
-      height: auto !important;
-      min-height: auto !important; }
-  @media screen and (max-width: 1680px) {
-    .new-arrival .pic_box li {
-      height: 30vw; } }
-  @media screen and (max-width: 1440px) {
-    .new-arrival .l-card_info > .title {
-      font-size: 2em; }
-    .new-arrival .pic_box li {
-      height: 32vw;
-      min-height: 420px; }
-    .new-arrival .slick-dots {
-      bottom: -10px; } }
-  @media screen and (max-width: 1199px) {
-    .new-arrival .l-card_info > .title {
-      font-size: 1.8em; }
-    .new-arrival .slick-dots {
-      bottom: -40px;
-      left: 0;
-      right: 0; } }
-  @media screen and (min-width: 992px) {
-    .new-arrival {
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .new-arrival .pic_box {
-        width: 55%; }
-        .new-arrival .pic_box .pic {
-          -webkit-transition: transform 0.25s ease-in-out;
-          -webkit-transition: -webkit-transform 0.25s ease-in-out;
-          transition: -webkit-transform 0.25s ease-in-out;
-          transition: transform 0.25s ease-in-out;
-          transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out; }
-        .new-arrival .pic_box:hover .pic {
-          -webkit-transform: scale(1.04);
-                  transform: scale(1.04); }
-      .new-arrival .l-card_box {
-        width: 55%; }
-      .new-arrival .slick-dots {
-        right: -80%;
-        text-align: right; }
-      .new-arrival .other-info {
-        font-size: 1.15em;
-        margin-bottom: 10px; } }
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
-    .new-arrival .app_feature .icon {
-      font-size: 40px;
-      margin-right: 0; }
-    .new-arrival .l-card_info > .title {
-      font-size: 2.2em; } }
+
+.new-arrival .pic_box {
+  max-width: 818px; }
+
+.new-arrival .pic {
+  height: 25vw;
+  overflow: hidden; }
+  .new-arrival .pic img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: none; }
+
+.new-arrival .l-card_box {
+  background-color: #fff;
+  -webkit-box-shadow: -2px 5px 30px 0 #ccc;
+          box-shadow: -2px 5px 30px 0 #ccc;
+  position: relative;
+  padding: 3.5% 3% 3%;
+  margin-left: -100px; }
   @media screen and (max-width: 991px) {
-    .new-arrival {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .new-arrival .pic_box, .new-arrival .l-card_box {
-        width: 90%; }
-      .new-arrival .pic_box {
-        max-width: none; }
-        .new-arrival .pic_box li {
-          min-height: 380px; }
-      .new-arrival .l-card_box {
-        margin-left: 0; }
-      .new-arrival .l-card_info > .title {
-        font-size: 1.8em; }
-      .new-arrival .slick-dots {
-        text-align: center;
-        bottom: 10px; }
-        .new-arrival .slick-dots li button {
-          width: 12px;
-          height: 12px;
-          border: 1px solid #ffffff; }
-        .new-arrival .slick-dots li.slick-active button {
-          background-color: #fff; } }
-  @media screen and (max-width: 767px) {
-    .new-arrival .pic_box li {
-      min-height: 200px; }
-    .new-arrival .l-card_info > .title {
-      font-size: 1.4em; }
     .new-arrival .l-card_box {
-      padding: 20px; }
-    .new-arrival .app_feature .icon {
-      display: none; } }
-  @media screen and (max-width: 479px) {
-    .new-arrival {
+      margin-left: -50px; } }
+
+.new-arrival .l-card_info {
+  max-width: 720px; }
+  .new-arrival .l-card_info > .title {
+    font-size: 2.2em;
+    line-height: 1.4;
+    margin: 0 0 14px; }
+  .new-arrival .l-card_info table {
+    width: calc(100% + 40px);
+    margin: 16px -10px 0; }
+    .new-arrival .l-card_info table td {
+      min-width: 30% !important; }
+
+.new-arrival .app_feature .icon {
+  font-size: 54px;
+  margin-right: 20px !important; }
+
+.new-arrival .app_feature .detil .title {
+  font-size: 1em;
+  line-height: normal; }
+
+.new-arrival .app_feature .house_num {
+  font-size: 1.4em; }
+
+.new-arrival .app_feature .house_unit {
+  font-size: 12px; }
+
+@media screen and (max-width: 1680px) {
+  .new-arrival .pic {
+    height: 30vw; } }
+
+@media screen and (max-width: 1440px) {
+  .new-arrival .l-card_info > .title {
+    font-size: 2em; }
+  .new-arrival .pic {
+    height: 32vw;
+    min-height: 420px; } }
+
+@media screen and (max-width: 1199px) {
+  .new-arrival .l-card_info > .title {
+    font-size: 1.8em; }
+  .new-arrival .slick-dots {
+    bottom: -10px; } }
+
+@media screen and (min-width: 992px) {
+  .new-arrival .item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .new-arrival .pic_box {
+    width: 55%; }
+    .new-arrival .pic_box .pic {
+      -webkit-transition: transform 0.25s ease-in-out;
+      -webkit-transition: -webkit-transform 0.25s ease-in-out;
+      transition: -webkit-transform 0.25s ease-in-out;
+      transition: transform 0.25s ease-in-out;
+      transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out; }
+    .new-arrival .pic_box:hover .pic {
+      -webkit-transform: scale(1.04);
+              transform: scale(1.04); }
+  .new-arrival .l-card_box {
+    width: 55%; }
+  .new-arrival .slick-dots {
+    right: 20px;
+    text-align: right; }
+  .new-arrival .other-info {
+    font-size: 1.15em;
+    margin-bottom: 10px; } }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .new-arrival .app_feature .icon {
+    font-size: 40px;
+    margin-right: 0; }
+  .new-arrival .l-card_info > .title {
+    font-size: 2.2em; } }
+
+@media screen and (max-width: 991px) {
+  .new-arrival .item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .new-arrival .pic_box, .new-arrival .l-card_box {
+    width: 90%; }
+  .new-arrival .pic_box {
+    max-width: none; }
+  .new-arrival .pic {
+    min-height: 380px; }
+  .new-arrival .l-card_box {
+    -webkit-box-shadow: 0 0 0 0;
+            box-shadow: 0 0 0 0;
+    margin-left: 0; }
+  .new-arrival .l-card_info > .title {
+    font-size: 1.8em; }
+  .new-arrival .slick-dots {
+    text-align: center;
+    bottom: -40px; } }
+
+@media screen and (max-width: 767px) {
+  .new-arrival .pic {
+    min-height: 200px; }
+  .new-arrival .l-card_info > .title {
+    font-size: 1.4em; }
+  .new-arrival .l-card_box {
+    padding: 20px; }
+  .new-arrival .app_feature .icon {
+    display: none; } }
+
+@media screen and (max-width: 479px) {
+  .new-arrival {
+    width: 100%; }
+    .new-arrival .pic_box, .new-arrival .l-card_box {
       width: 100%; }
-      .new-arrival .pic_box, .new-arrival .l-card_box {
-        width: 100%; }
-      .new-arrival .l-card_box {
-        padding: 14px; }
-      .new-arrival .app_feature .detil .title {
-        font-size: 16px; } }
+    .new-arrival .l-card_box {
+      padding: 14px; }
+    .new-arrival .app_feature .detil .title {
+      font-size: 16px; } }
 
 .all-estate ul {
   max-width: calc(1200px + 40px);
