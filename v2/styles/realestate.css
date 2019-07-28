@@ -1,3 +1,10 @@
+.realestateBanner img {
+  max-width: auto;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
 @media screen and (min-width: 992px) {
   .realestateBanner {
     height: 50vh; }
@@ -7,12 +14,29 @@
       float: left; }
       .realestateBanner .item:first-child {
         width: 50vw;
-        height: 50vh; }
-      .realestateBanner .item img {
-        width: 100%;
-        height: 100%;
-        -o-object-fit: cover;
-           object-fit: cover; } }
+        height: 50vh; } }
+
+@media screen and (max-width: 991px) {
+  .realestateBanner {
+    margin-bottom: 0 !important; }
+    .realestateBanner .item {
+      width: 100%;
+      height: 100%; }
+    .realestateBanner .slick-dots {
+      bottom: 20px; }
+    .realestateBanner .slick-dots li.slick-active button {
+      background-color: #FFF; }
+    .realestateBanner .slick-dots li button {
+      border: 1px solid #FFF; } }
+
+@media screen and (max-width: 600px) {
+  .realestateBanner .slick-dots {
+    bottom: 4px; }
+    .realestateBanner .slick-dots li {
+      margin: 0 4px; }
+  .realestateBanner .slick-dots li button {
+    width: 12px;
+    height: 12px; } }
 
 .realestate_inner * {
   line-height: 1.4; }
@@ -31,6 +55,9 @@
   @media screen and (min-width: 992px) {
     .realestate_content {
       width: calc(100% - (320px + 40px)); } }
+  @media screen and (max-width: 600px) {
+    .realestate_content {
+      padding: 14px 0; } }
 
 .property-heading .sub {
   font-size: 20.0px;
@@ -41,18 +68,43 @@
   font-size: 2.4em;
   margin: 10px 0 14px; }
 
+@media screen and (max-width: 767px) {
+  .property-heading .title {
+    font-size: 2em; }
+  .property-heading .sub {
+    font-size: 18px; }
+  .property-heading .social-media {
+    margin-top: 14px; } }
+
+@media screen and (max-width: 320px) {
+  .property-heading .title {
+    font-size: 1.8em; } }
+
 .propertyNav {
   width: 100%;
   border-bottom: 1px solid #BBBBBB; }
   .propertyNav li {
     display: inline-block;
+    text-align: center;
     border-bottom: 2px solid transparent;
-    padding: 10px 20px; }
+    padding: 10px 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
     .propertyNav li.active {
       border-color: #EE833E; }
       .propertyNav li.active a {
         font-weight: 500;
         color: #EE833E; }
+  @media screen and (max-width: 479px) {
+    .propertyNav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .propertyNav li {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        padding: 10px 0; } }
 
 .propertyInfo {
   font-size: 18px;
@@ -79,6 +131,13 @@
     text-align: justify;
     line-height: 1.8;
     margin: 0; }
+  .propertyInfo ul {
+    width: 100%; }
+  @media screen and (max-width: 767px) {
+    .propertyInfo {
+      font-size: 16px; }
+      .propertyInfo .title {
+        font-size: 18px; } }
 
 .imgbox {
   display: -webkit-box;
@@ -105,17 +164,32 @@
       width: 100%;
       margin-bottom: 20px; } }
 
-.l-half_box {
+#realestate .l-half_box {
   margin: 0 -40px; }
-  .l-half_box .item {
+  #realestate .l-half_box .item {
     border-right: 1px solid #BBBBBB;
     padding: 0 40px; }
-    .l-half_box .item:last-child {
+    #realestate .l-half_box .item:last-child {
       border: none; }
+  @media screen and (max-width: 600px) {
+    #realestate .l-half_box .title {
+      margin-bottom: 0; }
+    #realestate .l-half_box .item {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      margin-bottom: 30px; } }
 
 .realestate_stress {
+  margin: 40px 0;
   padding: 20px;
   border: 1px solid rgba(238, 131, 62, 0.8); }
+  @media screen and (max-width: 991px) {
+    .realestate_stress {
+      margin: 34px 0; } }
+  @media screen and (max-width: 479px) {
+    .realestate_stress {
+      margin: 26.4px 0; } }
   .realestate_stress .title {
     margin-top: 0; }
   .realestate_stress .advantage_block {
@@ -143,6 +217,24 @@
     display: block;
     font-style: normal;
     margin-top: 20px; }
+  @media screen and (max-width: 991px) {
+    .realestate_stress .advantage_block > * {
+      width: auto;
+      min-width: 40%; } }
+  @media screen and (max-width: 767px) {
+    .realestate_stress {
+      margin-top: 30px; }
+      .realestate_stress .advantage_block > * {
+        width: 100%; }
+      .realestate_stress .advantage_block .icon {
+        font-size: 40px; } }
+  @media screen and (max-width: 479px) {
+    .realestate_stress .advantage_block > * {
+      border: none; }
+    .realestate_stress .advantage_block .title {
+      font-size: 16px; }
+    .realestate_stress .advantage_block .num {
+      font-size: 20px; } }
 
 .my_realestate .advantage_block {
   border-bottom: 1px solid #BBBBBB; }
@@ -184,6 +276,10 @@
     @media screen and (max-width: 479px) {
       .my_buylist .buylist_total {
         padding-top: 13.2px; } }
+  @media screen and (max-width: 600px) {
+    .my_buylist .buylist_item {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
 
 .realestate_price .title, .realestate_price p {
   margin-top: 20px; }
@@ -209,6 +305,27 @@
   .trading-record .record_item:last-child {
     border: none; }
 
+@media screen and (max-width: 600px) {
+  .trading-record .record_item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .trading-record .record_item > *:first-child, .trading-record .record_item > *:last-child {
+      width: 50%;
+      margin-bottom: 6px; }
+    .trading-record .record_item > *:first-child {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+    .trading-record .record_item > *:nth-child(2) {
+      -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
+              order: 3; }
+    .trading-record .record_item > *:last-child {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      text-align: right; } }
+
 .realestate_card {
   width: 320px;
   border-radius: 16px;
@@ -216,7 +333,10 @@
   -webkit-box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.8);
           box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.8);
   position: absolute;
+  overflow: hidden;
   line-height: 1.6; }
+  .realestate_card.active {
+    right: calc(((100vw - 1440px) / 2) + 40px); }
   .realestate_card * {
     margin: 0; }
   .realestate_card .top, .realestate_card .middle, .realestate_card .error, .realestate_card .btm {
@@ -327,10 +447,62 @@
   .realestate_card .error {
     font-size: 15px;
     padding-top: 0; }
+  @media screen and (min-width: 1441px) {
+    .realestate_card {
+      right: 0; } }
+  @media screen and (max-width: 1440px) {
+    .realestate_card {
+      right: 20px; }
+      .realestate_card.active {
+        right: 20px; } }
   @media screen and (min-width: 992px) {
     .realestate_card {
-      top: -60px;
-      right: 0; } }
+      top: -60px; }
+      .realestate_card.active {
+        position: fixed;
+        top: 100px; } }
   @media screen and (max-width: 991px) {
     .realestate_card {
-      display: none; } }
+      display: none;
+      position: fixed;
+      width: 90%;
+      top: 50%;
+      left: 50%;
+      right: 0;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      z-index: 99;
+      max-height: 80vh;
+      overflow-x: hidden;
+      overflow-y: auto; } }
+
+.realestate_btn {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 50%;
+  color: #FFF; }
+  .realestate_btn::before {
+    margin: 0; }
+  @media screen and (max-width: 991px) {
+    .realestate_btn {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      position: fixed;
+      right: 40px;
+      bottom: 40px;
+      z-index: 99; } }
+  @media screen and (max-width: 479px) {
+    .realestate_btn {
+      width: 40px;
+      height: 40px;
+      right: 20px;
+      bottom: 30px; } }

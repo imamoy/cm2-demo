@@ -185,9 +185,35 @@ $(document).ready(function() {
 			]
 		});
 	});
+
+	$('#realestate').each(function(){
+		if (jQuery(window).width() < 991) { 
+			$('.realestateBanner').slick({
+				arrows: false,
+				dots: true,
+				fade: true,
+				autoplay: 5000
+			});
+			$('.realestate_btn').click(function(){
+				$('.realestate_card').show();
+				$('.pop_bg').show();
+			});
+			$('.pop_bg').click(function(){
+				$('.realestate_card').hide();
+				$('.pop_bg').hide();
+			});
+		}
+		
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 500) {
+			  $('.realestate_card').addClass('active');
+			} else {
+				$('.realestate_card').removeClass('active');
+			}
+		});
+
+	});
 	
-
-
 	/* ==========================================================================
 			IE 9 不支援 placeholder
 	==========================================================================*/

@@ -16,7 +16,7 @@ html, body {
     html, body {
       font-size: 18px;
       line-height: 1.6; } }
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     html, body {
       font-size: 16px; } }
 
@@ -1300,6 +1300,10 @@ img {
     min-width: 140px;
     margin: 0; }
 
+@media screen and (max-width: 479px) {
+  .download_list .download_item .file_name {
+    font-size: 16.6px; } }
+
 .file_download {
   margin: 0 10px;
   -webkit-transition: color 0.25s ease-in-out;
@@ -1547,20 +1551,27 @@ ul.circle-liststyle {
     .sc-ptb {
       padding-bottom: 39.6px; } }
 
-.social-media button {
+.social-media > * {
   border: none;
   font-size: 20px;
   margin: 0 6px;
   padding: 0;
-  color: #909090;
+  background-color: transparent;
+  color: #606060;
   cursor: pointer; }
+  .social-media > *:first-child {
+    margin-left: 0; }
 
 @media screen and (min-width: 992px) {
-  .social-media button {
+  .social-media > * {
     -webkit-transition: color 0.25s ease-in-out;
     transition: color 0.25s ease-in-out; }
-    .social-media button:hover {
+    .social-media > *:hover {
       color: #EE833E; } }
+
+@media screen and (max-width: 991px) {
+  .social-media > * {
+    margin: 0 10px; } }
 
 .currency {
   font-size: 14px; }
@@ -1591,14 +1602,19 @@ ul.circle-liststyle {
       display: block; }
 
 .realestate_map {
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 1.6 !important;
+  padding-left: 32px;
+  position: relative; }
   .realestate_map::before {
     content: '\f031';
     font-family: "fontello";
     display: inline-block;
     font-size: 22px;
     color: #EE833E;
-    margin-right: 10px; }
+    margin-right: 10px;
+    position: absolute;
+    left: 6px; }
 
 .btn {
   display: inline-block;
@@ -1778,6 +1794,16 @@ ul.circle-liststyle {
 .d-05s {
   -webkit-animation-delay: .5s;
           animation-delay: .5s; }
+
+.pop_bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 90;
+  display: none; }
 
 /* ==========================================================================
 		header
@@ -2800,6 +2826,10 @@ ul.circle-liststyle {
     @media screen and (max-width: 991px) {
       .l-label_text .label {
         margin-right: 20px; } }
+  @media screen and (max-width: 479px) {
+    .l-label_text .label {
+      font-size: 16.6px;
+      width: 50%; } }
 
 .l-checkList {
   display: -webkit-box;
@@ -2818,6 +2848,11 @@ ul.circle-liststyle {
       font-size: 22px;
       color: #EE833E;
       margin-right: 14px; }
+  @media screen and (max-width: 479px) {
+    .l-checkList li {
+      width: 100%;
+      font-size: 16.6px;
+      line-height: 1.6; } }
 
 .l-block_box {
   display: -webkit-box;
