@@ -21,7 +21,10 @@
     margin-bottom: 0 !important; }
     .realestateBanner .item {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      display: none; }
+      .realestateBanner .item:first-child {
+        display: block; }
     .realestateBanner .slick-dots {
       bottom: 20px; }
     .realestateBanner .slick-dots li.slick-active button {
@@ -159,6 +162,11 @@
     width: 50%;
     margin: 0;
     padding: 0; }
+  .imgbox img {
+    width: 100%;
+    height: 230px;
+    -o-object-fit: cover;
+       object-fit: cover; }
   @media screen and (max-width: 767px) {
     .imgbox figure {
       width: 100%;
@@ -290,6 +298,25 @@
     .realestate_price .title, .realestate_price p {
       margin-top: 13.2px; } }
 
+.trading-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16.6px;
+  color: #EE833E;
+  padding: 10px 0;
+  border-bottom: 1px solid #BBBBBB;
+  margin-bottom: 10px; }
+  .trading-nav *:first-child {
+    width: 94px; }
+  .trading-nav *:nth-child(2) {
+    width: 40px; }
+  .trading-nav *:nth-child(3) {
+    width: 55%; }
+
 .trading-record .record_item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,26 +332,62 @@
   .trading-record .record_item:last-child {
     border: none; }
 
+.trading-record .record_buy_detail a {
+  color: #EE833E;
+  -webkit-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out; }
+  .trading-record .record_buy_detail a:hover {
+    color: #909090 !important; }
+
+.trading-record .record_buy_detail_inner {
+  display: none;
+  font-size: 16.6px; }
+  .trading-record .record_buy_detail_inner .label, .trading-record .record_buy_detail_inner p {
+    width: auto;
+    display: inline-block;
+    margin: 4px 0; }
+  .trading-record .record_buy_detail_inner .label {
+    font-weight: 500;
+    margin-right: 20px; }
+
+.trading-record .date, .trading-record .record_buy_detail {
+  font-size: 16px; }
+
+.trading-record p {
+  margin: 4px 0; }
+
+@media screen and (min-width: 480px) {
+  .trading-record span, .trading-record .record_buy_detail {
+    width: 50%; }
+  .trading-record .date {
+    width: 100px; }
+  .trading-record .icon {
+    width: 30px; } }
+
 @media screen and (max-width: 600px) {
   .trading-record .record_item {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    .trading-record .record_item > *:first-child, .trading-record .record_item > *:last-child {
-      width: 50%;
-      margin-bottom: 6px; }
-    .trading-record .record_item > *:first-child {
+    .trading-record .record_item > * .date, .trading-record .record_item > * .icon, .trading-record .record_item > * .record_buy {
+      width: 50%; }
+    .trading-record .record_item > * .date {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
               order: 1; }
-    .trading-record .record_item > *:nth-child(2) {
+    .trading-record .record_item > * .record_but {
       -webkit-box-ordinal-group: 4;
           -ms-flex-order: 3;
-              order: 3; }
-    .trading-record .record_item > *:last-child {
+              order: 3;
+      text-align: right; }
+    .trading-record .record_item > *:nth-child(3) {
+      -webkit-box-ordinal-group: 5;
+          -ms-flex-order: 4;
+              order: 4;
+      margin-top: 10px; }
+    .trading-record .record_item > * .icon {
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
-              order: 2;
-      text-align: right; } }
+              order: 2; } }
 
 .realestate_card {
   width: 320px;
@@ -335,6 +398,8 @@
   position: absolute;
   overflow: hidden;
   line-height: 1.6; }
+  .realestate_card.hide {
+    display: none !important; }
   .realestate_card.active {
     right: calc(((100vw - 1440px) / 2) + 40px); }
   .realestate_card * {
@@ -506,3 +571,77 @@
       height: 40px;
       right: 20px;
       bottom: 30px; } }
+
+.creditcard_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px; }
+  .creditcard_row .icon {
+    margin-right: 10px; }
+  .creditcard_row input {
+    margin: 0 6px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #BBBBBB; }
+    .creditcard_row input:last-child {
+      margin-right: 0; }
+  .creditcard_row .card_num {
+    width: 50%; }
+
+.realestate_pop {
+  display: none;
+  max-width: 580px;
+  width: 90%;
+  max-height: 80vh;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.8);
+          box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.8);
+  border-radius: 16px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 99; }
+  .realestate_pop .close {
+    cursor: pointer;
+    font-size: 18px; }
+  .realestate_pop .top, .realestate_pop .middle, .realestate_pop .btm {
+    padding: 20px 30px; }
+    @media screen and (max-width: 991px) {
+      .realestate_pop .top, .realestate_pop .middle, .realestate_pop .btm {
+        padding: 17px 15px; } }
+    @media screen and (max-width: 479px) {
+      .realestate_pop .top, .realestate_pop .middle, .realestate_pop .btm {
+        padding: 13.2px 15px; } }
+  .realestate_pop .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid #BBBBBB; }
+    .realestate_pop .top > * {
+      margin: 0; }
+  .realestate_pop .btn {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    margin: 16px 0; }
+  .realestate_pop .btm {
+    background-color: #FAFAF6; }
+  .realestate_pop .note {
+    font-size: 16px;
+    font-style: normal; }
+  .realestate_pop p {
+    margin: 0; }

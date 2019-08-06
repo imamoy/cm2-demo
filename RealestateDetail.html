@@ -97,6 +97,46 @@
                       </figure>
                     </div>
                   </div>
+                  <div class="part">
+                    <div class="l-half_box l-half wow fadeInUp">
+                      <div class="item l-half_w50">
+                        <div class="l-half">
+                          <ul class="nostyle">
+                            <li class="l-label_text">
+                              <h5 class="label">交屋時間</h5>
+                              <p>2018/11/26</p>
+                            </li>
+                            <li class="l-label_text">
+                              <h5 class="label">銷售中</h5>
+                              <p>507.45 美元</p>
+                            </li>
+                            <li class="l-label_text">
+                              <h5 class="label">建物登記</h5>
+                              <p>73.20 平方米</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="item l-half_w50">
+                        <div class="l-half">
+                          <ul class="nostyle">
+                            <li class="l-label_text">
+                              <h5 class="label">單價</h5>
+                              <p>1042.50 美元/平方米</p>
+                            </li>
+                            <li class="l-label_text">
+                              <h5 class="label">樓層/樓高</h5>
+                              <p>4/12</p>
+                            </li>
+                            <li class="l-label_text">
+                              <h5 class="label">屋齡</h5>
+                              <p>12</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="part wow fadeInUp">
                     <h3 class="title">摘要</h3>
                     <p>柏盛豪園正位於烏蘭巴托國家公園旁，具備便利的交通與優質的假日休憩場所，國家公園是烏蘭巴托市民周末享受親子時光的首選，周邊有豐富的商販與購物街，公園內可以進行慢跑或單車等運動，亦有蒙古傳統表演節目以及傳統美食進駐。</p>
@@ -226,14 +266,14 @@
                   <div class="part wow fadeInUp">
                     <h3 class="title">交易記錄</h3>
                     <div class="trading-record">
-                      <div class="record_item"><span class="date">Jul 11 </span><span>user****76 購買 5,100 CM² @ 0.14 USD/CM²</span>
+                      <div class="record_item"><span class="date">Jul 11</span><span class="icon"><i class="icon-buy"></i></span><span>user****76 購買 5,100 CM² @ 0.14 USD/CM²</span>
                         <div class="record_buy t-red">731.90 <span class="currency">USD</span></div>
                       </div>
-                      <div class="record_item"><span class="date">Jul 11 </span><span>user****76 購買 5,100 CM² @ 0.14 USD/CM²</span>
+                      <div class="record_item"><span class="date">Jul 11 </span><span class="icon"><i class="icon-buy"></i></span><span>user****76 購買 5,100 CM² @ 0.14 USD/CM²</span>
                         <div class="record_buy t-red">731.90 <span class="currency">USD</span></div>
                       </div>
-                      <div class="record_item"><span class="date">Jul 11 </span><span>user****76 購買 5,100 CM² @ 0.14 USD/CM²</span>
-                        <div class="record_buy t-red">731.90 <span class="currency">USD</span></div>
+                      <div class="record_item"><span class="date">Jul 11</span><span class="icon"><i class="icon-sold"></i></span><span>user****76 賣出 5,100 CM² @ 0.14 USD/CM²</span>
+                        <div class="record_buy t-green">731.90 <span class="currency">USD</span></div>
                       </div>
                     </div>
                   </div>
@@ -261,7 +301,18 @@
                       </div>
                     </div>
                     <div class="my_buyRecord">
-                      <p>目前沒有投資記錄</p>
+                      <p>目前沒有投資記錄</p><br>
+                      <div class="trading-record">
+                        <div class="record_item"><span class="date">Jul 11</span><span class="icon"><i class="icon-buy"></i></span><span>user****76 購買 5,100 CM² @ 0.14 USD/CM²</span>
+                          <div class="record_buy t-red">731.90 <span class="currency">USD</span></div>
+                        </div>
+                        <div class="record_item"><span class="date">Jul 11 </span><span class="icon"><i class="icon-buy"></i></span><span>user****76 購買 5,100 CM² @ 0.14 USD/CM²</span>
+                          <div class="record_buy t-red">731.90 <span class="currency">USD</span></div>
+                        </div>
+                        <div class="record_item"><span class="date">Jul 11</span><span class="icon"><i class="icon-sold"></i></span><span>user****76 賣出 5,100 CM² @ 0.14 USD/CM²</span>
+                          <div class="record_buy t-green">731.90 <span class="currency">USD</span></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -305,7 +356,7 @@
                   <p><span class="t-primary">1</span> CM² = <span class="t-primary">1.06</span> CM2T</p>
                   <p><span class="f10">≈ 0.00 USD</span></p>
                 </div>
-                <button class="btn btn-gradient" href="" title="購買">購買</button>
+                <button class="btn btn-gradient" id="buy_problem" title="購買">購買</button>
               </div>
               <div class="error"><span class="t-red">購買的 CM² 超過總和</span></div>
               <div class="btm">
@@ -315,7 +366,26 @@
                 </div>
               </div>
             </div>
-            <div class="realestate_btn main-gradient"><i class="icon-basket">                         </i></div>
+            <div class="realestate_btn main-gradient"><i class="icon-basket">        </i></div>
+            <div class="realestate_pop">
+              <div class="top">
+                <h3 class="title">交易條款</h3><span class="close"><i class="icon-close"></i></span>
+              </div>
+              <div class="middle">
+                <p>您沒有足夠的CM2T購買100CM2，您可以使用信用卡購買更多CM2T來完成購買。每筆交易的最低CM2T金額為 100USD。剩餘的CM2T將被存入進入您的錢包。</p>
+              </div>
+              <div class="btm">
+                <div>信用卡或轉帳卡</div>
+                <form>
+                  <div class="creditcard_row"><span class="icon"><i class="icon-credit-card"></i></span>
+                    <input class="card_num" type="text" placeholder="Card Number">
+                    <input class="card_date" type="text" placeholder="MM/YY">
+                    <input class="card_cvc" type="password" placeholder="CVC">
+                  </div>
+                  <input class="btn btn-gradient" type="submit" value="付款 100 美元">
+                </form><em class="note">**通過點擊按鈕購買，表示我同意平台的 條款與條件 並且我理解有關買賣的風險。</em>
+              </div>
+            </div>
             <div class="pop_bg"></div>
           </div>
         </article>

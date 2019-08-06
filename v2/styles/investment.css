@@ -1,0 +1,171 @@
+.investment-inner {
+  padding: 40px 40px;
+  margin-bottom: 80px; }
+  @media screen and (max-width: 991px) {
+    .investment-inner {
+      padding: 34px 20px; } }
+  @media screen and (max-width: 479px) {
+    .investment-inner {
+      padding: 26.4px 20px; } }
+  @media screen and (max-width: 991px) {
+    .investment-inner {
+      margin-bottom: 68px; } }
+  @media screen and (max-width: 479px) {
+    .investment-inner {
+      margin-bottom: 52.8px; } }
+  @media screen and (max-width: 600px) {
+    .investment-inner {
+      padding: 20px 0; } }
+
+.investment_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0; }
+  @media screen and (max-width: 991px) {
+    .investment_card {
+      padding: 17px 0; } }
+  @media screen and (max-width: 479px) {
+    .investment_card {
+      padding: 13.2px 0; } }
+  .investment_card .investment_card_item {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-right: 1px solid #BBBBBB;
+    padding: 0 5%; }
+    .investment_card .investment_card_item:last-child {
+      border: none; }
+    .investment_card .investment_card_item .icon {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 54px;
+      height: 54px; }
+      .investment_card .investment_card_item .icon i::before {
+        margin: 0; }
+    .investment_card .investment_card_item .text {
+      margin-left: 30px; }
+      .investment_card .investment_card_item .text .title {
+        font-size: 20px;
+        font-weight: 400; }
+      .investment_card .investment_card_item .text .num {
+        margin-top: 4px; }
+        .investment_card .investment_card_item .text .num > * {
+          display: inline-block; }
+        .investment_card .investment_card_item .text .num .money_usd {
+          font-size: 20px; }
+  @media screen and (max-width: 991px) {
+    .investment_card {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .investment_card .investment_card_item {
+        margin: 10px; } }
+  @media screen and (max-width: 600px) {
+    .investment_card {
+      padding: 6px 0; }
+      .investment_card .investment_card_item {
+        width: 100%;
+        border: none; }
+        .investment_card .investment_card_item .icon {
+          font-size: 40px;
+          height: 40px; }
+        .investment_card .investment_card_item .text .title {
+          font-size: 18px; }
+        .investment_card .investment_card_item .num {
+          font-size: 17px; }
+          .investment_card .investment_card_item .num .money_usd {
+            font-size: 17px; } }
+
+.investment-detail_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 0 8px;
+  border-bottom: 1px solid #BBBBBB; }
+  .investment-detail_item:last-child {
+    border: none; }
+  .investment-detail_item .pic {
+    width: 250px;
+    height: 160px;
+    margin-right: 40px; }
+    @media screen and (max-width: 991px) {
+      .investment-detail_item .pic {
+        margin-right: 20px; } }
+    .investment-detail_item .pic img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .investment-detail_item .text {
+    width: calc(100% - (250px + 40px)); }
+    .investment-detail_item .text .title {
+      font-weight: 500;
+      margin: 0 0 10px; }
+  .investment-detail_item .l-half_box {
+    margin: 30px 0; }
+    .investment-detail_item .l-half_box .item {
+      border-right: 1px solid #BBBBBB; }
+      .investment-detail_item .l-half_box .item:last-child {
+        border: none;
+        padding-left: 30px; }
+      .investment-detail_item .l-half_box .item li {
+        font-size: 16.6px;
+        line-height: 1;
+        margin: 0;
+        margin-bottom: 20px; }
+        .investment-detail_item .l-half_box .item li:last-child {
+          margin-bottom: 0; }
+    .investment-detail_item .l-half_box p {
+      margin: 0; }
+  .investment-detail_item .my_buylist {
+    font-size: 16.6px;
+    display: none; }
+    .investment-detail_item .my_buylist .buylist_item {
+      padding: 0; }
+    .investment-detail_item .my_buylist .buylist_total {
+      padding-top: 10px; }
+
+@media screen and (max-width: 600px) {
+  .investment-detail_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .investment-detail_item .pic {
+      width: 90%;
+      min-height: 200px;
+      margin: 0 auto; }
+    .investment-detail_item .text {
+      width: 100%;
+      margin-top: 20px; }
+    .investment-detail_item .l-half {
+      margin-bottom: 20px; } }
+
+@media screen and (max-width: 479px) {
+  .investment-detail_item .l-half_w50 {
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    padding: 0 !important;
+    border: none !important; }
+    .investment-detail_item .l-half_w50 ul {
+      width: 100%; }
+      .investment-detail_item .l-half_w50 ul li {
+        margin-bottom: 10px; } }

@@ -131,6 +131,13 @@ $(document).ready(function() {
 		]
 	});
 
+	$('.select_nav').click(function(){
+		$('.select_submenu').slideToggle();
+	});
+	// $('.select_submenu li').click(function(){
+	// 	$('.select_nav .title').text(this);
+	// });
+
 	/* ==========================================================================
     * page
 	==========================================================================*/
@@ -203,7 +210,6 @@ $(document).ready(function() {
 				$('.pop_bg').hide();
 			});
 		}
-		
 		$(window).scroll(function() {
 			if ($(this).scrollTop() > 500) {
 			  $('.realestate_card').addClass('active');
@@ -211,9 +217,33 @@ $(document).ready(function() {
 				$('.realestate_card').removeClass('active');
 			}
 		});
-
 	});
-	
+
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 400) {
+			$('.mydetail_card').addClass('active');
+			$('.wallet_inner').addClass('active');
+		} else {
+			$('.mydetail_card').removeClass('active');
+			$('.wallet_inner').removeClass('active');
+		}
+	});
+
+	$('#wallet').each(function(){
+		$('.footer-nav').addClass('bg-light');
+		$('.record_item').click(function(){
+			$('.record_buy_detail_inner').slideToggle();
+		});
+	});
+	$('#investment').each(function(){
+		$('.footer-nav').addClass('bg-light');
+
+		$('.investment-detail_item').click(function(){
+			$(this).find('.my_buylist').slideToggle();
+		});
+	});
+
+
 	/* ==========================================================================
 			IE 9 不支援 placeholder
 	==========================================================================*/

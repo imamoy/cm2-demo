@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -1118,6 +1119,17 @@ img {
     .py-100 {
       padding: 66px 0; } }
 
+.icon-buy {
+  color: red; }
+
+.icon-sold {
+  color: green; }
+
+.icon-buy, .icon-sold {
+  font-size: 26px; }
+  .icon-buy::before, .icon-sold::before {
+    margin: 0; }
+
 .goApply {
   cursor: pointer;
   display: -webkit-inline-box;
@@ -1460,11 +1472,17 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
+.t-bold {
+  font-weight: 600; }
+
 .t-primary {
   color: #EE833E; }
 
 .t-red {
   color: #FF0000; }
+
+.t-green {
+  color: green; }
 
 .slick-dots li.slick-active button {
   background-color: #606060; }
@@ -1778,6 +1796,91 @@ ul.circle-liststyle {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
+
+.fixed_buildbg {
+  min-height: 700px;
+  background-image: url("../../images/v2/city-bg_fill.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed; }
+
+.mydetail_card {
+  background-color: #fff;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.8);
+          box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.8);
+  margin-top: -50px;
+  z-index: 50;
+  position: relative; }
+  .mydetail_card * {
+    line-height: 1.4; }
+  .mydetail_card h4 {
+    margin: 0; }
+  .mydetail_card.active {
+    width: 90%;
+    max-width: 1200px;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .mydetail_card {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      min-height: 100px; } }
+  @media screen and (max-width: 767px) {
+    .mydetail_card.active {
+      width: 100%;
+      top: 60px;
+      border-radius: 0; } }
+
+.money_usd {
+  font-size: 22px;
+  font-weight: 600; }
+  .money_usd span {
+    margin: 0 5px; }
+  @media screen and (max-width: 479px) {
+    .money_usd {
+      font-size: 18px; } }
+
+.money_cm2t {
+  font-size: 16px; }
+  .money_cm2t::before {
+    content: '≈';
+    margin: 0 20px; }
+  @media screen and (max-width: 479px) {
+    .money_cm2t {
+      font-size: 14px; } }
+
+.select_nav {
+  cursor: pointer;
+  position: relative; }
+  .select_nav .title {
+    font-size: 24px; }
+    .select_nav .title::after {
+      content: '\e812';
+      font-family: "fontello";
+      margin-left: 20px; }
+  .select_nav .select_submenu {
+    display: none;
+    background-color: #fff;
+    padding: 10px 20px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.8);
+            box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.8);
+    position: absolute;
+    top: 50px; }
+    .select_nav .select_submenu li {
+      margin: 10px 0;
+      -webkit-transition: color 0.25s ease-in-out;
+      transition: color 0.25s ease-in-out; }
+  @media screen and (min-width: 992px) {
+    .select_nav .select_submenu li:hover {
+      color: #EE833E; } }
 
 .d-02s {
   -webkit-animation-delay: .2s;
@@ -2292,6 +2395,9 @@ ul.circle-liststyle {
 
 .page-banner.after_2Line::after {
   background-color: #BBBBBB; }
+
+.page-banner.mid .pic {
+  height: 20.8vw; }
 
 .join-bar {
   background-image: url("../../images/v2/home/city-bg.jpg");
