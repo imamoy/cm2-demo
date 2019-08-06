@@ -232,7 +232,7 @@ $(document).ready(function() {
 	$('#wallet').each(function(){
 		$('.footer-nav').addClass('bg-light');
 		$('.record_item').click(function(){
-			$('.record_buy_detail_inner').slideToggle();
+			$(this).find('.record_buy_detail_inner').slideToggle();
 		});
 	});
 	$('#investment').each(function(){
