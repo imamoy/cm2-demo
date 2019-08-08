@@ -286,6 +286,7 @@
         padding-top: 13.2px; } }
   @media screen and (max-width: 600px) {
     .my_buylist .buylist_item {
+      font-size: 16px !important;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; } }
 
@@ -313,9 +314,19 @@
   .trading-nav *:first-child {
     width: 94px; }
   .trading-nav *:nth-child(2) {
-    width: 40px; }
+    width: 84px; }
   .trading-nav *:nth-child(3) {
     width: 55%; }
+  @media screen and (max-width: 600px) {
+    .trading-nav {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .trading-nav span {
+        font-size: 14px; }
+        .trading-nav span:first-child, .trading-nav span:nth-child(2) {
+          width: 50%; }
+        .trading-nav span:nth-child(even) {
+          text-align: right; } }
 
 .trading-record .record_item {
   display: -webkit-box;
@@ -356,15 +367,23 @@
 .trading-record p {
   margin: 4px 0; }
 
+.trading-record .icon span {
+  font-size: 16px;
+  margin-left: 10px; }
+
 @media screen and (min-width: 480px) {
   .trading-record span, .trading-record .record_buy_detail {
     width: 50%; }
   .trading-record .date {
     width: 100px; }
   .trading-record .icon {
-    width: 30px; } }
+    width: 84px; } }
 
 @media screen and (max-width: 600px) {
+  .trading-record .date, .trading-record .record_buy {
+    font-size: 14px; }
+  .trading-record .icon span {
+    font-size: 14px; }
   .trading-record .record_item {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }

@@ -83,6 +83,12 @@
   .wallet_detail {
     width: 60%; } }
 
+@media screen and (max-width: 1199px) {
+  .wallet_nav {
+    padding-left: 20px; }
+    .wallet_nav li {
+      padding: 0 10px; } }
+
 @media screen and (max-width: 767px) {
   .wallet_detail {
     -webkit-box-pack: center;
@@ -135,3 +141,81 @@
       font-size: 16.6px;
       margin-top: 10px;
       margin-left: 0; } }
+
+@media screen and (max-width: 600px) {
+  .wallet_detail .icon {
+    font-size: 55px; }
+    .wallet_detail .icon i {
+      margin-top: -20px; }
+  .wallet_nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 14px 20px; }
+    .wallet_nav ul {
+      width: 68%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-right: 2%; }
+      .wallet_nav ul li {
+        width: 50%;
+        text-align: center;
+        font-size: 16px; }
+        .wallet_nav ul li:first-child {
+          padding-left: 0; }
+    .wallet_nav .btn {
+      width: 42%;
+      font-size: 16px;
+      padding: 6px 0;
+      margin-top: 0; }
+  #wallet .trading-nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    #wallet .trading-nav span:first-child, #wallet .trading-nav span:nth-child(2) {
+      width: 50%; }
+    #wallet .trading-nav span:nth-child(even) {
+      text-align: right; }
+  #wallet .trading-record .record_buy_detail {
+    font-size: 14px !important;
+    margin-top: 0; }
+  #wallet .trading-record .record_buy_detail_inner {
+    font-size: 14px;
+    width: 150%; }
+    #wallet .trading-record .record_buy_detail_inner .label {
+      width: 20%;
+      float: left; }
+    #wallet .trading-record .record_buy_detail_inner p {
+      width: calc(100% - 28%); }
+  #wallet .record_item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 4px; }
+    #wallet .record_item .date, #wallet .record_item .icon {
+      width: 50%;
+      line-height: 35px;
+      height: 35px; }
+    #wallet .record_item > *:nth-child(even) {
+      text-align: right; }
+    #wallet .record_item .record_buy_detail {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 66.666667%;
+              flex: 0 0 66.666667%;
+      max-width: 66.666667%;
+      -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
+              order: 3; }
+    #wallet .record_item .record_buy {
+      -webkit-box-ordinal-group: 5;
+          -ms-flex-order: 4;
+              order: 4;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 33.333333%;
+              flex: 0 0 33.333333%; } }

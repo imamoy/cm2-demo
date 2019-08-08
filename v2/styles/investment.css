@@ -13,6 +13,17 @@
   @media screen and (max-width: 479px) {
     .investment-inner {
       margin-bottom: 52.8px; } }
+  .investment-inner .title {
+    font-size: 24px; }
+  @media screen and (max-width: 991px) {
+    .investment-inner .title {
+      font-size: 22px; } }
+  @media screen and (max-width: 767px) {
+    .investment-inner {
+      padding: 20px 10px; }
+      .investment-inner .title {
+        font-size: 20px;
+        margin-bottom: 0; } }
   @media screen and (max-width: 600px) {
     .investment-inner {
       padding: 20px 0; } }
@@ -71,26 +82,62 @@
         .investment_card .investment_card_item .text .num .money_usd {
           font-size: 20px; }
   @media screen and (max-width: 991px) {
+    .investment_card .investment_card_item {
+      margin: 10px;
+      padding: 0 20px; }
+      .investment_card .investment_card_item .icon {
+        font-size: 54px; }
+      .investment_card .investment_card_item .text {
+        margin-left: 20px; }
+        .investment_card .investment_card_item .text .title {
+          font-size: 18px; }
+    .investment_card.active .investment_card_item .text .title {
+      display: none; } }
+  @media screen and (max-width: 767px) {
     .investment_card {
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+      padding: 14px 10px; }
       .investment_card .investment_card_item {
-        margin: 10px; } }
+        min-width: 28%;
+        margin: 0;
+        padding: 0 12px;
+        padding-left: 16px; }
+        .investment_card .investment_card_item .icon {
+          font-size: 40px; }
+        .investment_card .investment_card_item .text {
+          width: auto;
+          margin-left: 10px; }
+          .investment_card .investment_card_item .text .title {
+            font-size: 16px; } }
   @media screen and (max-width: 600px) {
     .investment_card {
       padding: 6px 0; }
       .investment_card .investment_card_item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         width: 100%;
-        border: none; }
+        border: none;
+        padding: 10px 0; }
         .investment_card .investment_card_item .icon {
           font-size: 40px;
-          height: 40px; }
-        .investment_card .investment_card_item .text .title {
-          font-size: 18px; }
+          height: 40px;
+          margin-bottom: 10px; }
+        .investment_card .investment_card_item .text {
+          text-align: center;
+          margin-left: 0; }
+          .investment_card .investment_card_item .text .title {
+            font-size: 15px;
+            margin-bottom: 0; }
         .investment_card .investment_card_item .num {
-          font-size: 17px; }
+          font-size: 15px; }
           .investment_card .investment_card_item .num .money_usd {
-            font-size: 17px; } }
+            font-size: 17px; }
+      .investment_card.active .investment_card_item .money_cm2t {
+        display: none; } }
 
 .investment-detail_item {
   display: -webkit-box;
@@ -141,21 +188,29 @@
     .investment-detail_item .my_buylist .buylist_total {
       padding-top: 10px; }
 
+@media screen and (max-width: 767px) {
+  .investment-detail_item .l-half_box .item .label {
+    font-size: 16px; }
+  .investment-detail_item .l-half_box .item li {
+    font-size: 16px; } }
+
 @media screen and (max-width: 600px) {
   .investment-detail_item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    padding: 14px 0 4px; }
     .investment-detail_item .pic {
-      width: 90%;
+      width: 100%;
       min-height: 200px;
       margin: 0 auto; }
     .investment-detail_item .text {
       width: 100%;
-      margin-top: 20px; }
+      margin-top: 14px; }
     .investment-detail_item .l-half {
-      margin-bottom: 20px; } }
+      margin-top: 10px;
+      margin-bottom: 10px; } }
 
 @media screen and (max-width: 479px) {
   .investment-detail_item .l-half_w50 {
