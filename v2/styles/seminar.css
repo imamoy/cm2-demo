@@ -519,3 +519,74 @@
     width: 100%;
     margin-top: 10px;
     padding: 0; } }
+
+#header.seminar-edm_header {
+  position: absolute !important; }
+  #header.seminar-edm_header .logo {
+    position: relative !important; }
+
+@media screen and (max-width: 1199px) {
+  .edm-banner .pc-pic {
+    width: 140%;
+    max-width: none;
+    margin-left: -10%; } }
+
+.edm-speaker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media screen and (min-width: 1441px) {
+    .edm-speaker .pc-pic {
+      width: 90%; } }
+  @media screen and (max-width: 1199px) {
+    .edm-speaker .pc-pic {
+      width: 120%;
+      max-width: none;
+      margin-left: -10%; } }
+  @media screen and (max-width: 991px) {
+    .edm-speaker .pc-pic {
+      width: 132%;
+      max-width: none;
+      margin-left: -16%; } }
+  @media screen and (min-width: 768px) {
+    .edm-speaker .pc-hide {
+      display: none; } }
+  @media screen and (max-width: 767px) {
+    .edm-speaker .pc-pic {
+      display: none; }
+    .edm-speaker .pc-hide {
+      width: 400px; } }
+  @media screen and (max-width: 479px) {
+    .edm-speaker .pc-hide {
+      width: 100%; } }
+
+.edm-gift {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 40px; }
+  @media screen and (max-width: 991px) {
+    .edm-gift {
+      padding-top: 34px; } }
+  @media screen and (max-width: 479px) {
+    .edm-gift {
+      padding-top: 26.4px; } }
+  .edm-gift .pc-pic {
+    max-width: 1920px; }
+  .edm-gift img {
+    max-width: 100%; }
+  @media screen and (max-width: 1440px) {
+    .edm-gift .pc-pic {
+      width: 115%; } }
+  @media screen and (max-width: 1199px) {
+    .edm-gift .pc-pic {
+      width: 136%; } }
+  @media screen and (max-width: 767px) {
+    .edm-gift {
+      padding-top: 0; } }

@@ -22,7 +22,13 @@
 .icon-close:before { content: '\e814'; } /* '' */
 .icon-buy:before { content: '\e815'; } /* '' */
 .icon-sold:before { content: '\e816'; } /* '' */
+.icon-click:before { content: '\e817'; } /* '' */
+.icon-user:before { content: '\e818'; } /* '' */
 .icon-wallet:before { content: '\e826'; } /* '' */
+.icon-hourglass:before { content: '\e828'; } /* '' */
+.icon-waiting:before { content: '\e829'; } /* '' */
+.icon-income:before { content: '\e864'; } /* '' */
+.icon-exchange:before { content: '\e865'; } /* '' */
 .icon-location:before { content: '\f031'; } /* '' */
 .icon-gplus:before { content: '\f0d5'; } /* '' */
 .icon-doc-text:before { content: '\f0f6'; } /* '' */

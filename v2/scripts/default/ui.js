@@ -42,8 +42,13 @@ $(document).ready(function() {
 
 	$('.lang-btn').click(function(){
 		$('.lang-nav').slideToggle();
+		$('.member-nav').slideUp();
 	});
 
+	$('.member-btn').click(function(){
+		$('.member-nav').slideToggle();
+		$('.lang-nav').slideUp();
+	});
 
   /* ==========================================================================
     * 共用
@@ -193,14 +198,39 @@ $(document).ready(function() {
 		});
 	});
 
+	$('#seminar-edm').each(function(){
+		$('.seminar_news .slider').slick({
+			dots: false,
+			arrows: true,
+			slidesToShow: 2,
+			slidesToScroll: 2,
+			initialSlide: 1,
+			responsive: [
+				{
+					breakpoint: 991,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
+
+		$('.footer-nav').hide();
+	});
+
+	$('#login').each(function(){
+		$('#header').addClass('only_nobg');
+		$('#header').addClass('text_w');
+		$('#header .link-nav > ul').hide();
+		$('.footer-nav').hide();
+		$('footer').hide();
+	});
+	
+
+
 	$('#realestate').each(function(){
 		if (jQuery(window).width() < 991) { 
-			$('.realestateBanner').slick({
-				arrows: false,
-				dots: true,
-				fade: true,
-				autoplay: 5000
-			});
 			$('.realestate_btn').click(function(){
 				$('.realestate_card').show();
 				$('.pop_bg').show();
