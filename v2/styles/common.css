@@ -2015,6 +2015,10 @@ ul.circle-liststyle {
     .pc-mobile_picRWD .phone-pic {
       display: block; } }
 
+@media screen and (max-width: 767px) {
+  .phone-hide {
+    display: none; } }
+
 /*checkbox */
 .check-box {
   display: inline-block;
