@@ -2237,6 +2237,10 @@ ul.circle-liststyle {
       background-color: #FFF; }
   #header.text_w .logo a {
     background: url("../../images/v2/logo-w1.svg") center no-repeat; }
+  #header.text_w .link-nav a {
+    color: #606060; }
+    #header.text_w .link-nav a:hover {
+      color: #EE833E; }
   #header.nobg {
     background-color: transparent;
     border: none;
