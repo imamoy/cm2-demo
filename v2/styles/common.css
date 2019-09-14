@@ -1156,6 +1156,23 @@ img {
   .icon-exchange::before {
     margin: 0 2px; }
 
+.video .pic {
+  position: relative; }
+  .video .pic::after {
+    display: inline-block;
+    content: '\e819';
+    font-family: "fontello";
+    font-size: 50px;
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+
+.video:hover .pic::after {
+  color: #EE833E; }
+
 .media-bar {
   background-color: #eee;
   padding: 40px 20px; }
@@ -2013,7 +2030,11 @@ ul.circle-liststyle {
     .pc-mobile_picRWD .pc-pic {
       display: none; }
     .pc-mobile_picRWD .phone-pic {
-      display: block; } }
+      display: block; }
+    .pc-mobile_picRWD img {
+      max-width: none;
+      width: 100%;
+      height: auto; } }
 
 @media screen and (max-width: 767px) {
   .phone-hide {
@@ -2386,7 +2407,9 @@ ul.circle-liststyle {
     #header .menu .nav > ul li, #header .menu .link-nav > ul li {
       font-size: 18px; }
     #header .menu .nav {
-      height: 60%; } }
+      height: 60%; }
+    #header.text_w a {
+      color: #606060 !important; } }
 
 /* ==========================================================================
 		footer

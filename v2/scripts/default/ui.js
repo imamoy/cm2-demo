@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
 	$('.jqimgFill').imgLiquid();
+
+	$('a[data-rel^=lightcase]').lightcase();
 	
 		var wow = new WOW(
 			{
