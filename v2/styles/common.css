@@ -2077,14 +2077,16 @@ ul.circle-liststyle {
   .pc-mobile_picRWD .phone-pic {
     display: none; }
   @media screen and (max-width: 600px) {
-    .pc-mobile_picRWD .pc-pic {
-      display: none; }
-    .pc-mobile_picRWD .phone-pic {
+    .pc-mobile_picRWD {
       display: block; }
-    .pc-mobile_picRWD img {
-      max-width: none;
-      width: 100%;
-      height: auto; } }
+      .pc-mobile_picRWD .pc-pic {
+        display: none; }
+      .pc-mobile_picRWD .phone-pic {
+        display: block; }
+      .pc-mobile_picRWD img {
+        max-width: none;
+        width: 100%;
+        height: auto; } }
 
 @media screen and (max-width: 767px) {
   .phone-hide {

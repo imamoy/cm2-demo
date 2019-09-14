@@ -555,10 +555,13 @@
     .edm-speaker .pc-hide {
       display: none; } }
   @media screen and (max-width: 767px) {
-    .edm-speaker .pc-pic {
-      display: none; }
-    .edm-speaker .pc-hide {
-      width: 400px; } }
+    .edm-speaker {
+      text-align: center;
+      display: block; }
+      .edm-speaker .pc-pic {
+        display: none; }
+      .edm-speaker .pc-hide {
+        width: 400px; } }
   @media screen and (max-width: 479px) {
     .edm-speaker .pc-hide {
       width: 100%; } }
@@ -589,6 +592,7 @@
       width: 136%; } }
   @media screen and (max-width: 767px) {
     .edm-gift {
+      display: block;
       padding-top: 0; }
       .edm-gift img {
         max-width: none; } }
