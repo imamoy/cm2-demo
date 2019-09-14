@@ -589,4 +589,6 @@
       width: 136%; } }
   @media screen and (max-width: 767px) {
     .edm-gift {
-      padding-top: 0; } }
+      padding-top: 0; }
+      .edm-gift img {
+        max-width: none; } }
