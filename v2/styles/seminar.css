@@ -525,19 +525,17 @@
   #header.seminar-edm_header .logo {
     position: relative !important; }
 
-@media screen and (max-width: 1199px) {
-  .edm-banner .pc-pic {
-    width: 140%;
-    max-width: none;
-    margin-left: -10%; } }
+.edm-banner {
+  text-align: center; }
+  @media screen and (max-width: 1199px) {
+    .edm-banner .pc-pic {
+      width: 140%;
+      max-width: none;
+      margin-left: -10%; } }
 
 .edm-speaker {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  display: block;
+  text-align: center; }
   @media screen and (min-width: 1441px) {
     .edm-speaker .pc-pic {
       width: 90%; } }
@@ -567,12 +565,8 @@
       width: 100%; } }
 
 .edm-gift {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: block;
+  text-align: center;
   padding-top: 40px; }
   @media screen and (max-width: 991px) {
     .edm-gift {

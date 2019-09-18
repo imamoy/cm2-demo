@@ -33,7 +33,8 @@
           box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.8);
   line-height: 1.6;
   z-index: 50;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   .login-box .error {
     font-size: 15px; }
     .login-box .error ul {
