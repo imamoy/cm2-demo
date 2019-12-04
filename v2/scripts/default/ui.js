@@ -229,6 +229,10 @@ $(document).ready(function() {
 		$('footer').hide();
 	});
 	
+	$('#login.activity').each(function(){
+		$('body').css('overflow','hidden');
+		$('html').css('overflow','hidden');
+	});
 
 
 	$('#realestate').each(function(){
