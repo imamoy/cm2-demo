@@ -185,11 +185,13 @@
       font-size: 26px;
       margin-right: 4%; } }
 
+.activity .contact-info {
+  font-size: 16px;
+  margin-top: 4px; }
+
 .activity .login-box {
-  max-width: 730px; }
-  @media screen and (max-width: 479px) {
-    .activity .login-box {
-      margin-top: 20px; } }
+  max-width: 730px;
+  margin-top: 4vh; }
 
 .activity .input-row > * {
   -webkit-box-flex: 1;
