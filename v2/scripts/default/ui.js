@@ -230,8 +230,12 @@ $(document).ready(function() {
 	});
 	
 	$('#login.activity').each(function(){
-		$('body').css('overflow','hidden');
-		$('html').css('overflow','hidden');
+		if (jQuery(window).width() > 992) {
+			$('.login-info').mCustomScrollbar({ 
+				scrollbarPosition: 'outside',
+				theme: "minimal-dark"
+			});
+		 }
 	});
 
 
