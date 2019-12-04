@@ -2,6 +2,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media screen and (max-width: 1199px) {
+    .wallet_card {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-align: center; } }
 
 .wallet_inner {
   padding: 40px 40px;
@@ -32,7 +40,8 @@
 
 .wallet_detail {
   padding-left: 30px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  padding-right: 0; }
   @media screen and (max-width: 991px) {
     .wallet_detail {
       padding-left: 15px;
@@ -53,13 +62,9 @@
 
 .wallet_nav {
   min-height: 100px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 4%;
   background-color: #FAFAF6; }
-  @media screen and (max-width: 991px) {
-    .wallet_nav {
-      padding-left: 15px;
-      padding-right: 15px; } }
   .wallet_nav li {
     display: inline-block;
     padding: 0 15px;
@@ -68,6 +73,15 @@
     .wallet_nav li:last-child {
       border: none; }
   .wallet_nav .btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     min-width: auto;
     height: 50px;
     font-size: 18px;
@@ -79,15 +93,29 @@
   .wallet_nav .btn:hover {
     background-color: #EE833E; } }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .wallet_detail {
-    width: 60%; } }
+    width: calc(64% - 280px); } }
 
 @media screen and (max-width: 1199px) {
+  .wallet_detail {
+    width: calc(100% - 170px); }
   .wallet_nav {
+    width: 100%;
+    min-height: 80px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-left: 20px; }
     .wallet_nav li {
       padding: 0 10px; } }
+
+@media screen and (max-width: 991px) {
+  .wallet_detail {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 @media screen and (max-width: 767px) {
   .wallet_detail {
@@ -119,7 +147,7 @@
         -ms-flex-pack: center;
             justify-content: center; }
   .wallet_detail, .wallet_nav {
-    padding: 10px 20px; } }
+    padding: 10px 20px 0; } }
 
 @media screen and (max-width: 479px) {
   .wallet_detail .title {
@@ -144,7 +172,8 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
     .wallet_detail .icon {
-      font-size: 55px; }
+      font-size: 55px;
+      height: 40px; }
       .wallet_detail .icon i {
         margin-top: -20px; }
     .wallet_detail .wallet_money {
@@ -184,6 +213,7 @@
     .wallet_nav .btn {
       width: 42%;
       font-size: 16px;
+      height: 40px;
       padding: 6px 0;
       margin-top: 0; }
   #wallet .trading-nav {
@@ -230,3 +260,75 @@
       -webkit-box-flex: 0;
           -ms-flex: 0 0 33.333333%;
               flex: 0 0 33.333333%; } }
+
+#change_CM2T form {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 170px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 50px;
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out; }
+
+#change_CM2T label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+#change_CM2T .icon {
+  margin-top: 0;
+  margin-right: 6px;
+  font-size: 26px; }
+
+#change_CM2T .money_cm2t::before {
+  display: none; }
+
+#change_CM2T .error {
+  font-size: 15px;
+  padding-top: 0;
+  margin-left: 42px; }
+
+#change_CM2T input {
+  min-width: auto;
+  width: 60px;
+  margin: 0 5px;
+  border: none;
+  border-bottom: 1px solid #909090; }
+
+#change_CM2T #change_CM2T_btn {
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #EE833E;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  color: #EE833E;
+  background-color: transparent;
+  margin-left: 10px;
+  -webkit-transition: color .25s ease-in-out,background .25s ease-in-out;
+  transition: color .25s ease-in-out,background .25s ease-in-out; }
+  @media screen and (min-width: 992px) {
+    #change_CM2T #change_CM2T_btn:hover {
+      background-color: #EE833E;
+      color: #FFF; } }
+
+@media screen and (max-width: 991px) {
+  #change_CM2T {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px; }
+    #change_CM2T .error {
+      margin-left: 0; } }

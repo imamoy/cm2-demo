@@ -140,3 +140,61 @@
 .btn {
   width: 100%;
   margin-top: 14px; }
+
+.activity .login-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 30px; }
+  .activity .login-nav .icon {
+    font-size: 80px;
+    line-height: 1;
+    margin-right: 10px;
+    color: #ea7746; }
+  .activity .login-nav .title-icon {
+    display: none; }
+  .activity .login-nav .title {
+    width: 100%;
+    font-size: 1.4em;
+    background: #ea7746;
+    background: -webkit-gradient(linear, left top, right top, from(#ea7746), color-stop(80%, #f59a2e));
+    background: linear-gradient(90deg, #ea7746 0%, #f59a2e 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0; }
+  .activity .login-nav::after {
+    display: none; }
+  .activity .login-nav p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 4px 0 0; }
+  @media screen and (max-width: 767px) {
+    .activity .login-nav {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding: 14px 15px; }
+      .activity .login-nav .icon {
+        display: none; }
+      .activity .login-nav .title {
+        font-size: 1.26em; } }
+  @media screen and (max-width: 479px) {
+    .activity .login-nav .title-icon {
+      -webkit-text-fill-color: #ea7746;
+      display: inline-block;
+      color: #ea7746;
+      font-size: 26px;
+      margin-right: 4%; } }
+
+.activity .login-box {
+  max-width: 730px; }
+  @media screen and (max-width: 479px) {
+    .activity .login-box {
+      margin-top: 20px; } }
+
+.activity .input-row > * {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.activity .login-info {
+  height: calc(80vh - 25vh); }

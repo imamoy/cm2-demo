@@ -68,6 +68,14 @@
                   <div class="money_cm2t">0.11 CM2T</div>
                 </div>
               </div>
+              <div id="change_CM2T">
+                <form action="">
+                  <label class="name" for="changeCM2T"> <span class="icon"><i class="icon-bill"></i></span><span>兌換</span></label>
+                  <input type="text" id="changeCM2T"><span class="money_cm2t">CM2T</span>
+                  <button id="change_CM2T_btn">兌換</button>
+                </form>
+                <div class="error t-red">超過可以兌換的CM2T</div>
+              </div>
               <div class="wallet_nav">
                 <ul class="nostyle">
                   <li><a href="" title="交易市場">交易市場</a></li>
@@ -165,6 +173,26 @@
           </div>
         </article>
       </div>
+      <div class="realestate_pop" id="change_CM2T_pop">
+        <div class="top">
+          <h3 class="title">交易條款</h3><span class="close"><i class="icon-close"></i></span>
+        </div>
+        <div class="middle">
+          <p>您沒有足夠的CM2T購買100CM2，您可以使用信用卡購買更多CM2T來完成購買。每筆交易的最低CM2T金額為 100USD。剩餘的CM2T將被存入進入您的錢包。</p>
+        </div>
+        <div class="btm">
+          <div>信用卡或轉帳卡</div>
+          <form>
+            <div class="creditcard_row"><span class="icon"><i class="icon-credit-card"></i></span>
+              <input class="card_num" type="text" placeholder="Card Number">
+              <input class="card_date" type="text" placeholder="MM/YY">
+              <input class="card_cvc" type="password" placeholder="CVC">
+            </div>
+            <input class="btn btn-gradient" type="submit" value="付款 100 美元">
+          </form><em class="note">**通過點擊按鈕購買，表示我同意平台的 條款與條件 並且我理解有關買賣的風險。</em>
+        </div>
+      </div>
+      <div class="pop_bg"></div>
     </main>
     <nav class="footer-nav">
       <ul class="nostyle">

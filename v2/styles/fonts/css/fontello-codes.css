@@ -25,9 +25,11 @@
 .icon-click:before { content: '\e817'; } /* '' */
 .icon-user:before { content: '\e818'; } /* '' */
 .icon-play-circled:before { content: '\e819'; } /* '' */
+.icon-gift:before { content: '\e81a'; } /* '' */
 .icon-wallet:before { content: '\e826'; } /* '' */
 .icon-hourglass:before { content: '\e828'; } /* '' */
 .icon-waiting:before { content: '\e829'; } /* '' */
+.icon-bill:before { content: '\e837'; } /* '' */
 .icon-income:before { content: '\e864'; } /* '' */
 .icon-exchange:before { content: '\e865'; } /* '' */
 .icon-location:before { content: '\f031'; } /* '' */
