@@ -197,4 +197,5 @@
           flex-grow: 1; }
 
 .activity .login-info {
-  height: calc(80vh - 25vh); }
+  height: calc(80vh - 25vh);
+  padding: 30px -2px 30px 30px !important; }
