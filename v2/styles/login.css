@@ -189,7 +189,7 @@
   max-width: 730px; }
   @media screen and (max-width: 479px) {
     .activity .login-box {
-      margin-top: 20px; } }
+      margin-bottom: 2vh; } }
 
 .activity .input-row > * {
   -webkit-box-flex: 1;
@@ -199,3 +199,6 @@
 .activity .login-info {
   height: calc(80vh - 25vh);
   padding: 30px -2px 30px 30px !important; }
+  @media screen and (max-width: 479px) {
+    .activity .login-info {
+      height: calc(75vh - 25vh); } }
