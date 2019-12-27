@@ -408,6 +408,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -487,6 +489,15 @@
       width: 100%; }
     .lecture-apply .form-item input, .lecture-apply .form-item select {
       font-size: 16px; } }
+
+.lecture-apply_light-bg {
+  background-image: none;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  padding-bottom: 40px; }
+  .lecture-apply_light-bg .pop-inner {
+    -webkit-box-shadow: 0 40px 50px rgba(204, 204, 204, 0.2);
+            box-shadow: 0 40px 50px rgba(204, 204, 204, 0.2); }
 
 .seminar_news .l-list_box {
   display: block; }
