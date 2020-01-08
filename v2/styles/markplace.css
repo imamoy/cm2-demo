@@ -1,0 +1,241 @@
+@media screen and (max-width: 767px) {
+  #markplace {
+    font-size: 14px !important; }
+    #markplace .topbar {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      #markplace .topbar .pureSelect_text {
+        margin-bottom: 10px; } }
+
+.sort_nav li {
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out; }
+  .sort_nav li:nth-child(2) {
+    margin: 0 14px; }
+  .sort_nav li:hover {
+    color: #EE833E; }
+
+.sort_nav .icon {
+  margin-right: 6px; }
+
+.markplace-inner .markplace-listbox {
+  width: 100%; }
+
+@media screen and (min-width: 992px) {
+  .markplace-inner .markplace-listbox:first-child, .markplace-inner .markplace-listbox:nth-child(2) {
+    width: 50%; }
+  .markplace-inner .markplace-listbox:first-child {
+    padding-right: 40px;
+    border-right: 1px solid #f2f2f2; }
+  .markplace-inner .markplace-listbox:nth-child(2) {
+    padding-left: 40px; } }
+
+.markplace-listbox {
+  margin-bottom: 80px; }
+  @media screen and (max-width: 991px) {
+    .markplace-listbox {
+      margin-bottom: 68px; } }
+  @media screen and (max-width: 479px) {
+    .markplace-listbox {
+      margin-bottom: 52.8px; } }
+
+.markplace-listbox_label .icon {
+  margin-right: 14px; }
+
+.markplace-listbox_label .title {
+  font-size: 18px;
+  font-weight: 500; }
+
+@media screen and (max-width: 767px) {
+  .markplace-listbox_label .icon {
+    width: 40px; }
+    .markplace-listbox_label .icon img {
+      width: 100%;
+      height: auto; } }
+
+.markplace-listbox_list .trading-nav, .markplace-listbox_list .record_item, .markplace-listbox_list_myeditor .trading-nav, .markplace-listbox_list_myeditor .record_item {
+  font-size: 16.6px !important;
+  color: #404040; }
+  .markplace-listbox_list .trading-nav > *, .markplace-listbox_list .record_item > *, .markplace-listbox_list_myeditor .trading-nav > *, .markplace-listbox_list_myeditor .record_item > * {
+    padding: 10px 4px; }
+    .markplace-listbox_list .trading-nav > *:first-child, .markplace-listbox_list .record_item > *:first-child, .markplace-listbox_list_myeditor .trading-nav > *:first-child, .markplace-listbox_list_myeditor .record_item > *:first-child {
+      padding-left: 0; }
+    .markplace-listbox_list .trading-nav > *:last-child, .markplace-listbox_list .record_item > *:last-child, .markplace-listbox_list_myeditor .trading-nav > *:last-child, .markplace-listbox_list_myeditor .record_item > *:last-child {
+      padding-right: 0; }
+
+@media screen and (max-width: 767px) {
+  .markplace-listbox_list .trading-nav, .markplace-listbox_list .record_item, .markplace-listbox_list_myeditor .trading-nav, .markplace-listbox_list_myeditor .record_item {
+    font-size: 15px !important; } }
+
+.markplace-listbox_list .trading-nav, .markplace-listbox_list .record_item {
+  font-size: 16.6px !important;
+  color: #404040; }
+  @media screen and (min-width: 768px) {
+    .markplace-listbox_list .trading-nav > *, .markplace-listbox_list .record_item > * {
+      padding: 10px 4px; }
+      .markplace-listbox_list .trading-nav > *:first-child, .markplace-listbox_list .record_item > *:first-child {
+        width: 50% !important;
+        -webkit-box-ordinal-group: 2 !important;
+            -ms-flex-order: 1 !important;
+                order: 1 !important;
+        padding-left: 0; }
+      .markplace-listbox_list .trading-nav > *:nth-child(2), .markplace-listbox_list .record_item > *:nth-child(2) {
+        width: 26% !important;
+        -webkit-box-ordinal-group: 3 !important;
+            -ms-flex-order: 2 !important;
+                order: 2 !important; }
+      .markplace-listbox_list .trading-nav > *:nth-child(3), .markplace-listbox_list .record_item > *:nth-child(3) {
+        width: 12% !important;
+        -webkit-box-ordinal-group: 4 !important;
+            -ms-flex-order: 3 !important;
+                order: 3 !important; }
+      .markplace-listbox_list .trading-nav > *:last-child, .markplace-listbox_list .record_item > *:last-child {
+        width: 12% !important;
+        -webkit-box-ordinal-group: 5 !important;
+            -ms-flex-order: 4 !important;
+                order: 4 !important;
+        padding-right: 0; }
+    .markplace-listbox_list .trading-nav span, .markplace-listbox_list .record_item span {
+      text-align: left !important; }
+      .markplace-listbox_list .trading-nav span:last-child, .markplace-listbox_list .record_item span:last-child {
+        text-align: center !important; } }
+
+.markplace-listbox_list_myeditor .trading-nav > *:first-child, .markplace-listbox_list_myeditor .record_item > *:first-child {
+  -webkit-box-ordinal-group: 2 !important;
+      -ms-flex-order: 1 !important;
+          order: 1 !important; }
+
+.markplace-listbox_list_myeditor .trading-nav > *:nth-child(2), .markplace-listbox_list_myeditor .record_item > *:nth-child(2) {
+  -webkit-box-ordinal-group: 3 !important;
+      -ms-flex-order: 2 !important;
+          order: 2 !important; }
+
+.markplace-listbox_list_myeditor .trading-nav > *:nth-child(3), .markplace-listbox_list_myeditor .record_item > *:nth-child(3) {
+  -webkit-box-ordinal-group: 4 !important;
+      -ms-flex-order: 3 !important;
+          order: 3 !important; }
+
+.markplace-listbox_list_myeditor .trading-nav > *:nth-child(4), .markplace-listbox_list_myeditor .record_item > *:nth-child(4) {
+  -webkit-box-ordinal-group: 5 !important;
+      -ms-flex-order: 4 !important;
+          order: 4 !important; }
+
+.markplace-listbox_list_myeditor .trading-nav > *:nth-child(5), .markplace-listbox_list_myeditor .record_item > *:nth-child(5) {
+  -webkit-box-ordinal-group: 6 !important;
+      -ms-flex-order: 5 !important;
+          order: 5 !important; }
+
+.markplace-listbox_list_myeditor .trading-nav > *:nth-child(6), .markplace-listbox_list_myeditor .record_item > *:nth-child(6) {
+  -webkit-box-ordinal-group: 7 !important;
+      -ms-flex-order: 6 !important;
+          order: 6 !important; }
+
+@media screen and (min-width: 768px) {
+  .markplace-listbox_list_myeditor .trading-nav > *:first-child, .markplace-listbox_list_myeditor .record_item > *:first-child {
+    width: 40% !important; }
+  .markplace-listbox_list_myeditor .trading-nav > *:nth-child(2), .markplace-listbox_list_myeditor .record_item > *:nth-child(2) {
+    width: 8% !important; }
+  .markplace-listbox_list_myeditor .trading-nav > *:nth-child(3), .markplace-listbox_list_myeditor .record_item > *:nth-child(3) {
+    width: 12% !important; }
+  .markplace-listbox_list_myeditor .trading-nav > *:nth-child(4), .markplace-listbox_list_myeditor .record_item > *:nth-child(4) {
+    width: 10% !important; }
+  .markplace-listbox_list_myeditor .trading-nav > *:nth-child(5), .markplace-listbox_list_myeditor .record_item > *:nth-child(5) {
+    width: 15% !important; }
+  .markplace-listbox_list_myeditor .trading-nav > *:nth-child(6), .markplace-listbox_list_myeditor .record_item > *:nth-child(6) {
+    width: 15% !important; } }
+
+.markplace-listbox_list_myeditor .house_btn button {
+  width: 40% !important;
+  display: inline-block; }
+
+.house_price {
+  font-size: 17px;
+  color: #FF5050; }
+
+.house_btn button {
+  border-radius: 5px;
+  border: 1px solid #EE833E;
+  padding: 2px 0;
+  width: 100% !important;
+  font-size: 16px;
+  font-weight: 300;
+  color: #EE833E;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+  .house_btn button:hover {
+    background-color: #EE833E;
+    color: #FFF; }
+
+@media screen and (max-width: 767px) {
+  .house_btn {
+    font-size: 14px; }
+    .house_btn button {
+      width: 50px !important; } }
+
+@media screen and (max-width: 767px) {
+  .markplace-listbox_list .trading-nav > *, .markplace-listbox_list .record_item > *, .markplace-listbox_list_myeditor .trading-nav > *, .markplace-listbox_list_myeditor .record_item > * {
+    font-size: 15px;
+    width: 50%;
+    padding: 0 !important; }
+    .markplace-listbox_list .trading-nav > *:first-child, .markplace-listbox_list .record_item > *:first-child, .markplace-listbox_list_myeditor .trading-nav > *:first-child, .markplace-listbox_list_myeditor .record_item > *:first-child {
+      width: 60%; }
+    .markplace-listbox_list .trading-nav > *:nth-child(2), .markplace-listbox_list .record_item > *:nth-child(2), .markplace-listbox_list_myeditor .trading-nav > *:nth-child(2), .markplace-listbox_list_myeditor .record_item > *:nth-child(2) {
+      width: 40%; }
+    .markplace-listbox_list .trading-nav > *:nth-child(even), .markplace-listbox_list .record_item > *:nth-child(even), .markplace-listbox_list_myeditor .trading-nav > *:nth-child(even), .markplace-listbox_list_myeditor .record_item > *:nth-child(even) {
+      text-align: right !important; }
+    .markplace-listbox_list .trading-nav > *:nth-child(3), .markplace-listbox_list .record_item > *:nth-child(3), .markplace-listbox_list_myeditor .trading-nav > *:nth-child(3), .markplace-listbox_list_myeditor .record_item > *:nth-child(3) {
+      -webkit-box-ordinal-group: 4 !important;
+          -ms-flex-order: 3 !important;
+              order: 3 !important; }
+    .markplace-listbox_list .trading-nav > *:last-child, .markplace-listbox_list .record_item > *:last-child, .markplace-listbox_list_myeditor .trading-nav > *:last-child, .markplace-listbox_list_myeditor .record_item > *:last-child {
+      -webkit-box-ordinal-group: 5 !important;
+          -ms-flex-order: 4 !important;
+              order: 4 !important; }
+  .markplace-listbox_list .trading-nav, .markplace-listbox_list_myeditor .trading-nav {
+    margin-bottom: 0; } }
+
+@media screen and (max-width: 767px) {
+  .markplace-listbox_list_myeditor .trading-nav > *, .markplace-listbox_list_myeditor .record_item > * {
+    font-size: 15px;
+    padding: 0 !important; }
+    .markplace-listbox_list_myeditor .trading-nav > *:nth-child(3), .markplace-listbox_list_myeditor .record_item > *:nth-child(3) {
+      text-align: left !important; }
+    .markplace-listbox_list_myeditor .trading-nav > *:nth-child(4), .markplace-listbox_list_myeditor .record_item > *:nth-child(4) {
+      text-align: right !important; }
+    .markplace-listbox_list_myeditor .trading-nav > *:nth-child(5), .markplace-listbox_list_myeditor .record_item > *:nth-child(5) {
+      -webkit-box-ordinal-group: 6 !important;
+          -ms-flex-order: 5 !important;
+              order: 5 !important; }
+    .markplace-listbox_list_myeditor .trading-nav > *:last-child, .markplace-listbox_list_myeditor .record_item > *:last-child {
+      -webkit-box-ordinal-group: 7 !important;
+          -ms-flex-order: 6 !important;
+              order: 6 !important; } }
+
+#markplace_pop .input-row > * {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+#markplace_pop .money_usd {
+  font-size: 20px; }
+
+#markplace_pop .money_note {
+  font-size: 14px; }
+
+.markplace_total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .markplace_total > * {
+    width: 47%;
+    padding: 0; }
+    .markplace_total > *:first-child {
+      border-right: 1px solid #BBBBBB; }
+    .markplace_total > *:last-child {
+      padding-left: 20px; }

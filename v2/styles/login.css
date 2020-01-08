@@ -246,3 +246,16 @@
         flex-wrap: wrap; }
     .activity .input-row .check-box {
       width: 100%; } }
+
+.label_row {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .label_row span {
+    font-size: 16px; }

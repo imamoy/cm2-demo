@@ -283,6 +283,21 @@ $(document).ready(function() {
 		});
 	});
 
+	$('#markplace').each(function(){
+		$('#markplace_add').click(function(){
+			$('#markplace_pop').show();
+			$('.pop_bg').show();
+		});
+		$('.pop_bg').click(function(){
+			$('#markplace_pop').hide();
+			$('.pop_bg').hide();
+		});
+		$('#markplace_pop .close').click(function(){
+			$('#markplace_pop').hide();
+			$('.pop_bg').hide();
+		});
+	});
+
 
 	/* ==========================================================================
 			IE 9 不支援 placeholder

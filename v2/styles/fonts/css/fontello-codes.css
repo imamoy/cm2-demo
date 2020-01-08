@@ -26,6 +26,8 @@
 .icon-user:before { content: '\e818'; } /* '' */
 .icon-play-circled:before { content: '\e819'; } /* '' */
 .icon-gift:before { content: '\e81a'; } /* '' */
+.icon-cw:before { content: '\e81b'; } /* '' */
+.icon-plus:before { content: '\e81c'; } /* '' */
 .icon-wallet:before { content: '\e826'; } /* '' */
 .icon-hourglass:before { content: '\e828'; } /* '' */
 .icon-waiting:before { content: '\e829'; } /* '' */
