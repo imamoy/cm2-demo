@@ -138,13 +138,17 @@
   .markplace-listbox_list_myeditor .trading-nav > *:first-child, .markplace-listbox_list_myeditor .record_item > *:first-child {
     width: 40% !important; }
   .markplace-listbox_list_myeditor .trading-nav > *:nth-child(2), .markplace-listbox_list_myeditor .record_item > *:nth-child(2) {
-    width: 8% !important; }
+    width: 8% !important;
+    text-align: center; }
   .markplace-listbox_list_myeditor .trading-nav > *:nth-child(3), .markplace-listbox_list_myeditor .record_item > *:nth-child(3) {
-    width: 12% !important; }
+    width: 12% !important;
+    text-align: right; }
   .markplace-listbox_list_myeditor .trading-nav > *:nth-child(4), .markplace-listbox_list_myeditor .record_item > *:nth-child(4) {
-    width: 10% !important; }
+    width: 10% !important;
+    text-align: right; }
   .markplace-listbox_list_myeditor .trading-nav > *:nth-child(5), .markplace-listbox_list_myeditor .record_item > *:nth-child(5) {
-    width: 15% !important; }
+    width: 15% !important;
+    text-align: right; }
   .markplace-listbox_list_myeditor .trading-nav > *:nth-child(6), .markplace-listbox_list_myeditor .record_item > *:nth-child(6) {
     width: 15% !important; } }
 
@@ -177,6 +181,12 @@
     font-size: 14px; }
     .house_btn button {
       width: 50px !important; } }
+
+@media screen and (min-width: 768px) {
+  .markplace-listbox_list .trading-nav .price, .markplace-listbox_list .trading-nav .num, .markplace-listbox_list .trading-nav .house_price, .markplace-listbox_list .trading-nav .house_num, .markplace-listbox_list .record_item .price, .markplace-listbox_list .record_item .num, .markplace-listbox_list .record_item .house_price, .markplace-listbox_list .record_item .house_num, .markplace-listbox_list_myeditor .trading-nav .price, .markplace-listbox_list_myeditor .trading-nav .num, .markplace-listbox_list_myeditor .trading-nav .house_price, .markplace-listbox_list_myeditor .trading-nav .house_num, .markplace-listbox_list_myeditor .record_item .price, .markplace-listbox_list_myeditor .record_item .num, .markplace-listbox_list_myeditor .record_item .house_price, .markplace-listbox_list_myeditor .record_item .house_num {
+    text-align: right !important;
+    padding-right: 15px !important;
+    padding-left: 0; } }
 
 @media screen and (max-width: 767px) {
   .markplace-listbox_list .trading-nav > *, .markplace-listbox_list .record_item > *, .markplace-listbox_list_myeditor .trading-nav > *, .markplace-listbox_list_myeditor .record_item > * {
@@ -217,25 +227,51 @@
           -ms-flex-order: 6 !important;
               order: 6 !important; } }
 
-#markplace_pop .input-row > * {
+#markplace .realestate_pop .input-row > * {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
-          flex-grow: 1; }
+          flex-grow: 1;
+  width: 50%; }
 
-#markplace_pop .money_usd {
+#markplace .realestate_pop .money_usd {
   font-size: 20px; }
 
-#markplace_pop .money_note {
+#markplace .realestate_pop .money_note {
   font-size: 14px; }
+
+#markplace .realestate_pop .btn-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4px; }
+  #markplace .realestate_pop .btn-row .btn {
+    min-width: auto;
+    width: 48%;
+    line-height: 40px; }
+
+#markplace .realestate_pop .btn {
+  font-size: 18px; }
 
 .markplace_total {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
   .markplace_total > * {
-    width: 47%;
+    width: 50%;
     padding: 0; }
     .markplace_total > *:first-child {
       border-right: 1px solid #BBBBBB; }
     .markplace_total > *:last-child {
       padding-left: 20px; }
+
+#markplace_error {
+  width: 480px; }
+  #markplace_error .icon {
+    font-size: 24px;
+    color: #FF5050;
+    margin-right: 6px; }
+  #markplace_error .top {
+    border: none; }

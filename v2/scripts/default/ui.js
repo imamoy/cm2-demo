@@ -289,13 +289,18 @@ $(document).ready(function() {
 			$('.pop_bg').show();
 		});
 		$('.pop_bg').click(function(){
-			$('#markplace_pop').hide();
+			$('.realestate_pop').hide();
 			$('.pop_bg').hide();
 		});
-		$('#markplace_pop .close').click(function(){
-			$('#markplace_pop').hide();
+		$('.realestate_pop .close').click(function(){
+			$('.realestate_pop').hide();
 			$('.pop_bg').hide();
 		});
+		$('.markplace_check').click(function(){
+			$('#markplace_check_pop').show();
+			$('.pop_bg').show();
+		});
+
 	});
 
 

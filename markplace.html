@@ -81,26 +81,26 @@
                   <h4 class="title">別人掛買房屋我要賣</h4>
                 </div>
                 <div class="markplace-listbox_list">
-                  <div class="trading-nav"><span>房產</span><span>價錢(USD)</span><span>數量</span><span>&emsp;&emsp;</span></div>
+                  <div class="trading-nav"><span>房產</span><span class="price">價錢(USD)</span><span class="num">數量</span><span>&emsp;&emsp;</span></div>
                   <div class="trading-record">
                                         <div class="record_item wow fadeInUp"><span class="house_name">職人工法.名苑日光</span><span class="house_price">1.0000</span><span class="house_num">1</span>
                                           <div class="house_btn">
-                                            <button>出售</button>
+                                            <button class="markplace_check">出售</button>
                                           </div>
                                         </div>
                                         <div class="record_item wow fadeInUp"><span class="house_name">烏蘭巴托Khotkhon大樓</span><span class="house_price">0.1182</span><span class="house_num">100</span>
                                           <div class="house_btn">
-                                            <button>出售</button>
+                                            <button class="markplace_check">出售</button>
                                           </div>
                                         </div>
                                         <div class="record_item wow fadeInUp"><span class="house_name">職人工法.名苑日光</span><span class="house_price">1.0000</span><span class="house_num">1</span>
                                           <div class="house_btn">
-                                            <button>出售</button>
+                                            <button class="markplace_check">出售</button>
                                           </div>
                                         </div>
                                         <div class="record_item wow fadeInUp"><span class="house_name">烏蘭巴托Khotkhon大樓</span><span class="house_price">0.1182</span><span class="house_num">100</span>
                                           <div class="house_btn">
-                                            <button>出售</button>
+                                            <button class="markplace_check">出售</button>
                                           </div>
                                         </div>
                   </div>
@@ -111,26 +111,26 @@
                   <h4 class="title">賣場待售房屋我要買</h4>
                 </div>
                 <div class="markplace-listbox_list">
-                  <div class="trading-nav"><span>房產</span><span>價錢(USD)</span><span>數量</span><span>&emsp;&emsp;</span></div>
+                  <div class="trading-nav"><span>房產</span><span class="price">價錢(USD)</span><span class="num">數量</span><span>&emsp;&emsp;</span></div>
                   <div class="trading-record">
                                         <div class="record_item wow fadeInUp"><span class="house_name">職人工法.名苑日光</span><span class="house_price">1.0000</span><span class="house_num">1</span>
                                           <div class="house_btn">
-                                            <button>購買</button>
+                                            <button class="markplace_check">購買</button>
                                           </div>
                                         </div>
                                         <div class="record_item wow fadeInUp"><span class="house_name">烏蘭巴托Khotkhon大樓</span><span class="house_price">0.1182</span><span class="house_num">100</span>
                                           <div class="house_btn">
-                                            <button>購買</button>
+                                            <button class="markplace_check">購買</button>
                                           </div>
                                         </div>
                                         <div class="record_item wow fadeInUp"><span class="house_name">職人工法.名苑日光</span><span class="house_price">1.0000</span><span class="house_num">1</span>
                                           <div class="house_btn">
-                                            <button>購買</button>
+                                            <button class="markplace_check">購買</button>
                                           </div>
                                         </div>
                                         <div class="record_item wow fadeInUp"><span class="house_name">烏蘭巴托Khotkhon大樓</span><span class="house_price">0.1182</span><span class="house_num">100</span>
                                           <div class="house_btn">
-                                            <button>購買</button>
+                                            <button class="markplace_check">購買</button>
                                           </div>
                                         </div>
                   </div>
@@ -141,7 +141,7 @@
                   <h4 class="title">我的賣場交易訂單</h4>
                 </div>
                 <div class="markplace-listbox_list_myeditor">
-                  <div class="trading-nav"><span>房產</span><span>總類</span><span>價錢(USD)</span><span>數量</span><span>交易時間</span><span>&emsp;&emsp;</span></div>
+                  <div class="trading-nav"><span>房產</span><span>總類</span><span class="price">價錢(USD)</span><span class="num">數量</span><span>交易時間</span><span>&emsp;&emsp;</span></div>
                   <div class="trading-record">
                                         <div class="record_item wow fadeInUp"><span class="house_name">職人工法.名苑日光</span><span class="house_type t-green">買</span><span class="house_price">1.0000</span><span class="house_num">1</span><span class="house_time">Jul 1 1, 2019</span>
                                           <div class="house_btn">
@@ -219,9 +219,43 @@
                 </div>
               </div>
             </div>
-            <input class="btn btn-gradient" type="submit" value="建立訂單">
+            <div class="btn-row">
+              <div class="btn btn-gradient">建立訂單</div>
+              <div class="close btn btn-border-primary">取消</div>
+            </div>
           </div>
         </form>
+      </div>
+      <div class="realestate_pop" id="markplace_check_pop">
+        <div class="top">
+          <h3 class="title">確認訂單</h3><span class="close"><i class="icon-close"></i></span>
+        </div>
+        <div class="middle">
+          <div class="flex-row ai-center mb-10">
+            <label class="mr-10">總計</label>
+            <div class="flex-row ai-center">
+              <div class="money_usd">
+                <sapn class="t-primary">1000</sapn><span>CM2T</span>
+              </div>
+              <div class="money_note">(0.0013 USD)</div>
+            </div>
+          </div>
+          <div class="note">*點擊確認按鈕，我同意平台<a href="">條款和條件</a>，而且我理解有關買賣的風險。</div>
+        </div>
+        <div class="btm">
+          <div class="note">您有<span class="ml-10 mr-10">02:55</span>確認您的交易</div>
+          <form action="">
+            <div class="btn-row">
+              <input class="btn btn-gradient" type="submit" value="確認">
+              <div class="close btn btn-border-primary">取消</div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="realestate_pop" id="markplace_error" style="display:block;">
+        <div class="top">
+          <div class="title"> <span class="icon"><i class="icon-info"></i></span><span>您沒有足夠的CM2T可以購買</span></div><span class="close"><i class="icon-close"></i></span>
+        </div>
       </div>
       <div class="pop_bg"></div>
     </main>
