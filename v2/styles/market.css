@@ -1,0 +1,599 @@
+.page-headline_en .title {
+  margin-bottom: 0; }
+
+.products-control, .products-control .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: color;
+      -ms-flex-align: color;
+          align-items: color;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16.6px;
+  line-height: 1;
+  border-bottom: 1px solid rgba(187, 187, 187, 0.5);
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
+
+.products-control .left, .products-control .right, .products-control .right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.products-control li {
+  width: auto; }
+
+.products-control .pureSelect_text {
+  line-height: 1; }
+  .products-control .pureSelect_text select {
+    font-size: 16px;
+    font-weight: 400;
+    color: #606060; }
+
+.border-RLine {
+  padding-right: 15px;
+  margin-right: 15px;
+  border-right: 1px solid #BBBBBB; }
+
+.other-info {
+  font-size: 16.6px;
+  font-weight: 300; }
+
+.all-estate.market_block li {
+  width: calc(100% / 3); }
+
+.all-estate.market_block .l-card {
+  margin: 15px; }
+
+.all-estate.market_block .l-card .l-card_info {
+  padding: 14px; }
+
+.all-estate.market_block .l-card_pic {
+  height: 12.6vw; }
+
+.all-estate.market_block .icon {
+  display: none; }
+
+.all-estate.market_list li {
+  width: 100%; }
+
+.all-estate.market_list .l-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 0 0 0 !important;
+          box-shadow: 0 0 0 0 !important;
+  border: none;
+  padding-bottom: 20px;
+  margin-top: 0;
+  border-bottom: 1px solid rgba(187, 187, 187, 0.5) !important; }
+  .all-estate.market_list .l-card .l-card_pic {
+    width: 24vw;
+    height: 12vw;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+    min-height: auto; }
+  .all-estate.market_list .l-card .l-card_info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 80%;
+            flex: 0 0 80%;
+    border: none;
+    padding: 0px 10px 0px 20px; }
+    .all-estate.market_list .l-card .l-card_info .other-info {
+      margin-bottom: 5px; }
+    .all-estate.market_list .l-card .l-card_info .title {
+      margin-bottom: 5px; }
+    .all-estate.market_list .l-card .l-card_info table {
+      margin: 10px 0 0 0 !important; }
+    .all-estate.market_list .l-card .l-card_info .detil > * {
+      display: inline-block; }
+
+#market_Filter {
+  margin: 0 -20px; }
+
+.market-view {
+  cursor: pointer; }
+  .market-view.active {
+    color: #EE833E; }
+
+.search-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20px; }
+  .search-row .input {
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid rgba(187, 187, 187, 0.5);
+    -webkit-box-shadow: 0 0 0 0;
+            box-shadow: 0 0 0 0;
+    padding: 5px 10px 5px 15px; }
+    .search-row .input input {
+      border: none;
+      font-size: 16px; }
+    .search-row .input::before {
+      content: '\e820';
+      display: inline-block;
+      font-family: "fontello";
+      font-size: 12px;
+      color: #606060; }
+  .search-row .button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 60px;
+    border-radius: 30px;
+    background-color: #EE833E;
+    margin-left: 10px;
+    line-height: 30px;
+    height: 30px; }
+    .search-row .button input {
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      border: none;
+      background-color: transparent;
+      color: #FFF;
+      padding: 0;
+      margin: 0; }
+
+.filter {
+  margin: 3vh 0 5vh; }
+  .filter ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0; }
+  .filter .ckFilter-button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+    height: 36px;
+    border-radius: 40px;
+    border: 1px solid #EE833E;
+    color: #EE833E;
+    margin: 0 10px;
+    cursor: pointer;
+    -webkit-transition: background 0.25s ease-in-out;
+    transition: background 0.25s ease-in-out; }
+    .filter .ckFilter-button.active {
+      background-color: #EE833E;
+      color: #FFF; }
+
+.market-MapPage .sc-ptb {
+  padding: 0 !important; }
+
+.market-MapPage .products-control {
+  margin: 0;
+  border-top: 1px solid rgba(187, 187, 187, 0.2);
+  border-bottom: none;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  padding: 10px 0; }
+
+.market-MapPage .products-control .container {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none; }
+
+.market-MapPage .market-inner {
+  height: calc(100vh - (90px + 51px));
+  position: relative; }
+
+.market-MapPage .inner {
+  min-height: auto; }
+
+#market_mapArea {
+  width: 100%;
+  height: 100%; }
+  #market_mapArea .gmnoprint {
+    display: none; }
+  #market_mapArea img {
+    max-width: 100%; }
+
+#cm2-house {
+  max-width: 300px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 14px 0 rgba(204, 204, 204, 0.8);
+          box-shadow: 0 0 14px 0 rgba(204, 204, 204, 0.8);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  -webkit-transition: right 0.25s ease-in-out;
+  transition: right 0.25s ease-in-out; }
+  #cm2-house.active {
+    right: 0; }
+  #cm2-house .all-estate li {
+    width: 100%; }
+  #cm2-house .all-estate .l-card {
+    margin: 0;
+    border: none; }
+  #cm2-house .all-estate .l-card_pic {
+    min-height: auto;
+    height: 10vw; }
+  #cm2-house .all-estate .l-card_info {
+    padding: 10px; }
+    #cm2-house .all-estate .l-card_info .other-info {
+      font-size: 14px; }
+    #cm2-house .all-estate .l-card_info > .title {
+      font-size: 18px; }
+    #cm2-house .all-estate .l-card_info table {
+      margin: 0; }
+  #cm2-house .all-estate .app_feature .icon {
+    display: none; }
+  #cm2-house .all-estate .app_feature .detil .title {
+    font-size: 14px; }
+  #cm2-house .all-estate .app_feature .detil .house_num {
+    font-size: 16px; }
+  #cm2-house .progressBar {
+    height: 15px;
+    padding: 1px;
+    margin: 3px 0; }
+    #cm2-house .progressBar .progressBar_value {
+      height: 100%; }
+    #cm2-house .progressBar .progressBar_num {
+      font-size: 12px; }
+  #cm2-house .all-estate {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: none; }
+  #cm2-house .close-btn {
+    cursor: pointer;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #EE833E;
+    color: #FFF;
+    width: 20px;
+    height: 40px;
+    border-radius: 20px 0 0 20px;
+    left: -20px;
+    top: 50%;
+    padding-left: 4px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute; }
+
+.map_label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60px;
+  height: 24px;
+  border-radius: 24px;
+  background-color: #fff;
+  font-size: 14px;
+  font-family: "Montserrat", "Noto Sans TC", sans-serif;
+  font-weight: 500;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  color: #ED3F47; }
+
+.market-head.active {
+  width: 100%;
+  background-color: #fff;
+  left: 0;
+  z-index: 40;
+  position: fixed; }
+
+.mark-list {
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 10px;
+  left: 3.4%;
+  z-index: 30;
+  border-radius: 6px;
+  padding: 0 5px !important; }
+  .mark-list li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    margin: 5px; }
+    .mark-list li:first-child .icon, .mark-list li:nth-child(2) .icon {
+      width: 22px; }
+  .mark-list .icon {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 24px;
+    margin-right: 4px; }
+  .mark-list .name {
+    font-size: 14px; }
+  .mark-list img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%; }
+
+@media screen and (min-width: 992px) {
+  .mobile-text {
+    display: none; }
+  .all-estate.market_list .app_feature {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    text-align: left !important; }
+    .all-estate.market_list .app_feature .title {
+      margin-bottom: 0;
+      margin-right: 10px; }
+    .all-estate.market_list .app_feature .house_num {
+      font-weight: 500;
+      color: #EE833E !important; }
+  .market-head.active {
+    top: 90px; }
+    .market-head.active .page-headline_en {
+      display: none; }
+    .market-head.active .filter {
+      margin: 2vh 0; } }
+
+@media screen and (max-width: 991px) {
+  .pc-text {
+    display: none; }
+  .page-headline_en {
+    margin-bottom: 10px; }
+  .products-control {
+    font-size: 15px; }
+    .products-control .left, .products-control .right, .products-control .pureSelect_text select {
+      font-size: 15px; }
+    .products-control .left > * {
+      display: inline-block; }
+    .products-control .search-row {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      float: right;
+      margin-left: 10px; }
+    .products-control .border-RLine {
+      padding-right: 10px;
+      margin-right: 10px; }
+  .filter {
+    margin: 14px 0 0; }
+    .filter .ckFilter-button {
+      width: 36px;
+      font-size: 13px;
+      height: 36px;
+      margin: 0 2.4%; }
+      .filter .ckFilter-button i {
+        font-size: 20px;
+        margin: 0; }
+  .all-estate.market_block li {
+    width: calc(100% / 2); }
+  .all-estate.market_list .l-card_info {
+    padding-left: 10px !important; }
+    .all-estate.market_list .l-card_info .other-info {
+      font-size: 14px; }
+    .all-estate.market_list .l-card_info .title, .all-estate.market_list .l-card_info .other-info {
+      line-height: 1.2; }
+    .all-estate.market_list .l-card_info .title {
+      font-size: 17px; }
+    .all-estate.market_list .l-card_info .detil .title {
+      font-size: 14px;
+      margin-bottom: 0; }
+    .all-estate.market_list .l-card_info .detil .house_num {
+      font-size: 17px;
+      margin: 0;
+      margin-left: 5px; }
+    .all-estate.market_list .l-card_info .app_feature {
+      -webkit-box-pack: start !important;
+          -ms-flex-pack: start !important;
+              justify-content: flex-start !important; }
+  .all-estate.market_list .l-card .l-card_pic {
+    height: 100%; }
+  .all-estate.market_list .l-card .l-card_info table {
+    margin: 5px 0 0 0 !important; }
+    .all-estate.market_list .l-card .l-card_info table td {
+      line-height: 1;
+      padding: 0; }
+  .progressBar {
+    height: 15px;
+    padding: 1px; }
+    .progressBar .progressBar_value {
+      height: 100%; }
+    .progressBar .progressBar_num {
+      font-size: 12px; }
+  .search-row .input input, .search-row .button input {
+    font-size: 15px; }
+  .market-head.active {
+    top: 60px; }
+    .market-head.active .page-headline_en {
+      margin-top: 0; } }
+
+@media screen and (max-width: 767px) {
+  .page-headline_en {
+    margin-top: 40px; }
+  .market-MapPage .market-inner {
+    height: calc(100vh - (60px + 123px));
+    overflow: hidden; }
+  #market_Filter {
+    margin: 0; }
+  .filter {
+    margin: 20px 0; }
+  .market-inner {
+    margin-top: -20px !important; }
+  .all-estate.market_block li {
+    padding: 0; }
+  .all-estate.market_block .l-card {
+    margin: 10px; } }
+
+@media screen and (max-width: 479px) {
+  .mark-list {
+    top: auto;
+    bottom: 10px; }
+    .mark-list li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  .products-control {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 0 -20px;
+    padding: 0 6px 14px;
+    margin-top: 20px;
+    position: relative; }
+    .products-control .left, .products-control .right {
+      width: 100%; }
+    .products-control .left, .products-control .right, .products-control .right ul {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .products-control .left {
+      margin-bottom: 0; }
+    .products-control .right li:nth-child(2) {
+      display: none; }
+    .products-control .border-RLine {
+      padding-right: 6px;
+      margin-right: 8px; }
+    .products-control .search-box {
+      position: absolute;
+      top: -48px;
+      right: 14px; }
+    .products-control .search-btn {
+      width: 34px;
+      height: 34px;
+      display: -webkit-inline-box !important;
+      display: -ms-inline-flexbox !important;
+      display: inline-flex !important;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      border-radius: 50%;
+      border: 1px solid #BBBBBB;
+      font-size: 14px; }
+    .products-control .search-row {
+      display: none;
+      width: 100vw;
+      padding: 4px 16px 8px;
+      margin: 0 !important;
+      background-color: #fff;
+      -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 40px;
+      right: -14px;
+      z-index: 40; }
+      .products-control .search-row .input {
+        width: calc(100% - 70px); }
+      .products-control .search-row .input, .products-control .search-row .button {
+        display: inline-block; }
+      .products-control .search-row .button {
+        float: right; }
+  .all-estate.market_block .l-card {
+    margin: 10px 0; }
+  .all-estate.market_block li {
+    width: calc(100% / 1); }
+  .all-estate.market_block .l-card_pic {
+    min-height: auto;
+    height: 22vh; }
+  .all-estate.market_block .l-card_info {
+    padding: 10px !important; }
+    .all-estate.market_block .l-card_info table {
+      margin-bottom: 0 !important; }
+  .filter {
+    margin: 10px 0; }
+  #market_list {
+    display: none; }
+  .market-MapPage .products-control {
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); }
+    .market-MapPage .products-control .left {
+      margin-bottom: 10px; }
+    .market-MapPage .products-control .right li:nth-child(2) {
+      display: inline-block; }
+    .market-MapPage .products-control .search-box {
+      top: 6px;
+      right: 16px; }
+    .market-MapPage .products-control .search-btn {
+      border: none; }
+    .market-MapPage .products-control .search-row {
+      top: 32px;
+      right: -15px; }
+  .market-MapPage .market-inner {
+    margin-top: 10px !important;
+    height: calc(100vh - (60px + 83px)); }
+  #cm2-house {
+    right: 0;
+    bottom: -100%;
+    top: auto;
+    max-width: none;
+    height: 330px;
+    -webkit-transition: bottom 0.25s ease-in-out;
+    transition: bottom 0.25s ease-in-out;
+    z-index: 60; }
+    #cm2-house.active {
+      right: 0;
+      bottom: 0; }
+    #cm2-house .all-estate li {
+      padding: 0; }
+    #cm2-house .all-estate .l-card .l-card_pic {
+      height: 20vh; }
+    #cm2-house .close-btn {
+      width: 28px;
+      border-radius: 28px 0 0 28px;
+      left: auto;
+      top: -32px;
+      right: 20px;
+      font-size: 20px;
+      -webkit-transform: translate(0, 0) rotate(90deg);
+              transform: translate(0, 0) rotate(90deg); }
+  .pureSelect_text select {
+    padding-right: 20px; }
+  .pureSelect_text::after {
+    right: -6px; } }

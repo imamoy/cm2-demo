@@ -72,13 +72,13 @@
     font-size: 15px !important; } }
 
 .markplace-listbox_list .trading-nav, .markplace-listbox_list .record_item {
-  font-size: 16.6px !important;
+  font-size: 16px !important;
   color: #404040; }
   @media screen and (min-width: 768px) {
     .markplace-listbox_list .trading-nav > *, .markplace-listbox_list .record_item > * {
       padding: 10px 4px; }
       .markplace-listbox_list .trading-nav > *:first-child, .markplace-listbox_list .record_item > *:first-child {
-        width: 50% !important;
+        width: 45% !important;
         -webkit-box-ordinal-group: 2 !important;
             -ms-flex-order: 1 !important;
                 order: 1 !important;
@@ -89,7 +89,7 @@
             -ms-flex-order: 2 !important;
                 order: 2 !important; }
       .markplace-listbox_list .trading-nav > *:nth-child(3), .markplace-listbox_list .record_item > *:nth-child(3) {
-        width: 12% !important;
+        width: 18% !important;
         -webkit-box-ordinal-group: 4 !important;
             -ms-flex-order: 3 !important;
                 order: 3 !important; }

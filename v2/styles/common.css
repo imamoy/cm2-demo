@@ -2162,13 +2162,14 @@ ul.circle-liststyle {
     background-color: transparent;
     font-size: 22px;
     font-weight: 500;
-    color: #404040; }
+    color: #404040;
+    padding-right: 26px; }
   .pureSelect_text::after {
     content: '\e812';
     font-family: "fontello";
     position: absolute;
     top: -2px;
-    right: auto;
+    right: -4px;
     font-size: 22px;
     padding: 0 10px;
     cursor: pointer;

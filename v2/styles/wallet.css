@@ -95,7 +95,7 @@
 
 @media screen and (min-width: 1200px) {
   .wallet_detail {
-    width: calc(64% - 280px); } }
+    width: calc(64% - 100px); } }
 
 @media screen and (max-width: 1199px) {
   .wallet_detail {

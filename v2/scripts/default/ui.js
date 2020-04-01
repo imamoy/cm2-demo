@@ -12,6 +12,7 @@ $(document).ready(function() {
 		);
 		wow.init();
 
+
 	/* ==========================================================================
     * 變數定義
   ==========================================================================*/
@@ -289,18 +290,65 @@ $(document).ready(function() {
 			$('.pop_bg').show();
 		});
 		$('.pop_bg').click(function(){
-			$('.realestate_pop').hide();
+			$('#markplace_pop').hide();
 			$('.pop_bg').hide();
 		});
-		$('.realestate_pop .close').click(function(){
-			$('.realestate_pop').hide();
+		$('#markplace_pop .close').click(function(){
+			$('#markplace_pop').hide();
 			$('.pop_bg').hide();
 		});
-		$('.markplace_check').click(function(){
-			$('#markplace_check_pop').show();
-			$('.pop_bg').show();
-		});
+	});
 
+	$('#market_list').click(function(){
+		$(this).addClass('active');
+		$('#market_block').removeClass('active');
+		$('.all-estate').addClass('market_list');
+		$('.all-estate').removeClass('market_block');
+	});
+	$('#market_block').click(function(){
+		$(this).addClass('active');
+		$('#market_list').removeClass('active');
+		$('.all-estate').addClass('market_block');
+		$('.all-estate').removeClass('market_list');
+	});
+
+	$('#market_Filter').each(function(){
+		$('#market_Filter').ckFilter({
+			reset: true,
+			multiple: false,
+			animation: false
+		});
+	});
+	
+	$(window).resize(function() {
+		if (jQuery(window).width() < 767) {
+			$('.all-estate').removeClass('market_list');
+			$('.all-estate').addClass('market_block');
+		}
+	});
+	
+	$('.ckFilter-button').click(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+	});
+
+	$('#cm2-house .close-btn').click(function(){
+		$('#cm2-house').removeClass('active');
+	});
+
+	$('.search-btn').click(function(){
+		$('.search-row').slideToggle();
+	});
+
+	$('.market-item').each(function(){
+		var market_head_offsetTop = $('.market-head').offset();
+		var chartNews_offsetTop = $('.l-chartNews').offset();
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > market_head_offsetTop.top && $(this).scrollTop() < chartNews_offsetTop.top - 400) {
+				$(".market-head").addClass("active");
+			} else {
+				$(".market-head").removeClass("active");
+			}
+		});
 	});
 
 
