@@ -404,10 +404,11 @@
   .filter {
     margin: 14px 0 0; }
     .filter .ckFilter-button {
-      width: 36px;
-      font-size: 13px;
-      height: 36px;
-      margin: 0 2.4%; }
+      width: auto;
+      font-size: 14px;
+      height: 32px;
+      margin: 1%;
+      padding: 0 2.48%; }
       .filter .ckFilter-button i {
         font-size: 20px;
         margin: 0; }
