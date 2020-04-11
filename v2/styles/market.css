@@ -105,6 +105,8 @@
   cursor: pointer; }
   .market-view.active {
     color: #EE833E; }
+  .market-view .icon-market-map {
+    font-size: 18px; }
 
 .search-row {
   display: -webkit-box;
