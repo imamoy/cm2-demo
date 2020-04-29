@@ -2705,6 +2705,20 @@ ul.circle-liststyle {
 .page-banner.mid .pic {
   height: 20.8vw; }
 
+.page-banner.mini .pic {
+  height: 16vw;
+  min-height: 180px; }
+
+@media screen and (max-width: 991px) {
+  .page-banner.mini .f-title_l {
+    font-size: 36px; } }
+
+@media screen and (max-width: 767px) {
+  .page-banner.mini .f-title_l {
+    font-size: 30px; }
+  .page-banner.mini .pic {
+    min-height: 120px; } }
+
 .join-bar {
   background-image: url("../../images/v2/home/city-bg.jpg");
   background-position: center;
