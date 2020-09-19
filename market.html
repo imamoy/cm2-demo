@@ -198,13 +198,31 @@
                   <div class="border-RLine">
                     <div class="pureSelect_text">
                       <select>
+                        <option value="蒙古">蒙古</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="border-RLine">
+                    <div class="pureSelect_text">
+                      <select>
                         <option value="坪數">坪數</option>
+                        <option value="10坪以下">10坪以下</option>
+                        <option value="10~20坪">10~20坪</option>
+                        <option value="20~30坪">20~30坪</option>
+                        <option value="30~40坪">30~40坪</option>
+                        <option value="40~50坪">40~50坪</option>
+                        <option value="50坪以上">50坪以上</option>
                       </select>
                     </div>
                   </div>
                   <div class="pureSelect_text">
                     <select>
                       <option value="總價不限">總價不限</option>
+                      <option value="總價1">總價1</option>
+                      <option value="總價2">總價2</option>
+                      <option value="總價3">總價3</option>
+                      <option value="總價4">總價4</option>
+                      <option value="總價5">總價5</option>
                     </select>
                   </div>
                   <div class="search-box">
@@ -241,18 +259,18 @@
               </div>
               <div class="filter">
                 <ul class="nostyle">
-                  <li class="ckFilter-button active" data-filter="all"> <span class="pc-text">所有房產</span><span class="mobile-text">ALL</span><span class="mobile-name">所有房產</span></li>
-                  <li class="ckFilter-button" data-filter="house"><span class="pc-text">住宅</span><span class="mobile-text"><i class="icon-market-house"></i></span><span class="mobile-name">住宅</span></li>
-                  <li class="ckFilter-button" data-filter="business"> <span class="pc-text">商業大樓</span><span class="mobile-text"><i class="icon-market-business"></i></span><span class="mobile-name">商業大樓</span></li>
-                  <li class="ckFilter-button" data-filter="redraw"><span class="pc-text">重劃區</span><span class="mobile-text"><i class="icon-market-redraw"></i></span><span class="mobile-name">重劃區</span></li>
-                  <li class="ckFilter-button" data-filter="gold"><span class="pc-text">黃金地段</span><span class="mobile-text"><i class="icon-market-gold"></i></span><span class="mobile-name">黃金地段 </span></li>
+                  <li class="ckFilter-button active" data-filter="all"> <span class="mobile-text">ALL</span><span class="mobile-name">所有房產</span><span class="pc-text">所有房產</span></li>
+                  <li class="ckFilter-button" data-filter="house"><span><i class="icon-market-house"></i></span><span class="mobile-name">住宅</span><span class="pc-text">住宅</span></li>
+                  <li class="ckFilter-button" data-filter="business"> <span><i class="icon-market-business"></i></span><span class="mobile-name">商業大樓</span><span class="pc-text">商業大樓</span></li>
+                  <li class="ckFilter-button" data-filter="redraw"><span><i class="icon-market-redraw"></i></span><span class="mobile-name">重劃區</span><span class="pc-text">重劃區</span></li>
+                  <li class="ckFilter-button" data-filter="gold"><span><i class="icon-market-gold"></i></span><span class="mobile-name">黃金地段 </span><span class="pc-text">黃金地段</span></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="container">
             <ul class="nostyle flex-row all-estate market_block market-inner">
-              <li class="wow fadeInUp ckFilter-obj all house"><a class="l-card" href="#" title="房場資訊">
+              <li class="ckFilter-obj all house"><a class="l-card" href="#" title="房場資訊">
                   <div class="l-card_pic"><img src="images/v2/home/real-eatate_01.jpg" alt="房產圖片"/></div>
                   <div class="l-card_info">
                     <div class="other-info"><span>烏蘭巴托</span><span>  |  </span><span>傳統租賃</span></div>
@@ -295,7 +313,7 @@
                     </table>
                   </div></a>
               </li>
-              <li class="wow fadeInUp ckFilter-obj all business"><a class="l-card" href="#" title="房場資訊">
+              <li class="ckFilter-obj all business"><a class="l-card" href="#" title="房場資訊">
                   <div class="l-card_pic"><img src="images/v2/home/real-eatate_02.jpg" alt="房產圖片"/></div>
                   <div class="l-card_info">
                     <div class="other-info"><span>烏蘭巴托</span><span>  |  </span><span>傳統租賃</span></div>
@@ -338,7 +356,7 @@
                     </table>
                   </div></a>
               </li>
-              <li class="wow fadeInUp ckFilter-obj all redraw"><a class="l-card" href="#" title="房場資訊">
+              <li class="ckFilter-obj all redraw"><a class="l-card" href="#" title="房場資訊">
                   <div class="l-card_pic"><img src="images/v2/home/real-eatate_03.jpg" alt="房產圖片"/></div>
                   <div class="l-card_info">
                     <div class="other-info"><span>烏蘭巴托</span><span>  |  </span><span>傳統租賃</span></div>
@@ -381,7 +399,7 @@
                     </table>
                   </div></a>
               </li>
-              <li class="wow fadeInUp ckFilter-obj all gold"><a class="l-card" href="#" title="房場資訊">
+              <li class="ckFilter-obj all gold"><a class="l-card" href="#" title="房場資訊">
                   <div class="l-card_pic"><img src="images/v2/home/real-eatate_01.jpg" alt="房產圖片"/></div>
                   <div class="l-card_info">
                     <div class="other-info"><span>烏蘭巴托</span><span>  |  </span><span>傳統租賃</span></div>
@@ -487,7 +505,6 @@
     <script src="v2/scripts/plugins/slick.js"></script>
     <script src="v2/scripts/plugins/lightcase.js"></script>
     <script src="v2/scripts/plugins/goodshare.min.js"></script>
-    <script src="v2/scripts/plugins/ckFilter.js"></script>
     <script src="v2/scripts/default/ui.js"></script>
   </body>
 </html>

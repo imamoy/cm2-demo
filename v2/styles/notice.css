@@ -6,9 +6,13 @@
     margin: 0;
     padding: 1rem; }
     #notice .l-list:nth-child(even) {
-      background-color: rgba(222, 222, 222, 0.3); }
+      background-color: rgba(253, 169, 116, 0.1); }
     #notice .l-list:last-child {
       border: none; }
+    #notice .l-list.haveRead {
+      background-color: rgba(222, 222, 222, 0.5); }
+      #notice .l-list.haveRead > * {
+        opacity: .4; }
   #notice .l-list_text {
     font-size: 17px !important; }
     #notice .l-list_text p {
@@ -36,3 +40,7 @@
     #notice .l-list .l-list_text {
       width: 100%;
       font-size: 15px !important; } }
+
+.notice-head {
+  text-align: right;
+  margin-bottom: 20px; }

@@ -606,3 +606,26 @@
       padding-top: 0; }
       .edm-gift img {
         max-width: none; } }
+
+.font-cn {
+  font-family: "Noto Sans SC", sans-serif !important; }
+
+#seminar.threeCity .banner {
+  background-image: url("../../images/v2/seminar/seminar-threebanner.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  #seminar.threeCity .banner::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2); }
+  @media screen and (max-width: 991px) {
+    #seminar.threeCity .banner {
+      background-position: top cneter;
+      height: 78vh;
+      background-image: url("../../images/v2/seminar/seminar-threebanner_m.jpg"); } }

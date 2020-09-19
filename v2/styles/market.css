@@ -182,7 +182,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 16px;
-    width: 100px;
+    min-width: 115px;
     text-align: center;
     height: 36px;
     border-radius: 40px;
@@ -217,7 +217,11 @@
   position: relative; }
 
 .market-MapPage .inner {
-  min-height: auto; }
+  min-height: auto;
+  margin-top: -20px !important; }
+
+.market-MapPage .filter {
+  margin: 2vh 0; }
 
 #market_mapArea {
   width: 100%;
@@ -308,15 +312,16 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 60px;
-  height: 24px;
   border-radius: 24px;
   background-color: #fff;
   font-size: 14px;
   font-family: "Montserrat", "Noto Sans TC", sans-serif;
   font-weight: 500;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  color: #ED3F47; }
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  color: #ED3F47;
+  text-align: center;
+  padding: 2px; }
 
 .market-head.active {
   width: 100%;
@@ -460,7 +465,8 @@
   .search-row .input input, .search-row .button input {
     font-size: 15px; }
   .market-head.active {
-    top: 60px; }
+    top: 0;
+    z-index: 999; }
     .market-head.active .page-headline_en {
       margin-top: 0; } }
 
@@ -490,8 +496,6 @@
       display: -ms-flexbox;
       display: flex; }
   .products-control {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
     margin: 0 -20px;
     padding: 0 6px 14px;
     margin-top: 20px;
@@ -503,7 +507,7 @@
           -ms-flex-pack: center;
               justify-content: center; }
     .products-control .left {
-      margin-bottom: 0; }
+      margin-bottom: 10px; }
     .products-control .right li:nth-child(2) {
       display: none; }
     .products-control .border-RLine {
@@ -561,6 +565,8 @@
     margin: 10px 0 24px; }
     .filter .ckFilter-button.active .mobile-name {
       color: #EE833E; }
+    .filter .ckFilter-button {
+      min-width: auto; }
   #market_list {
     display: none; }
   .market-MapPage .products-control {
@@ -579,8 +585,8 @@
       top: 32px;
       right: -15px; }
   .market-MapPage .market-inner {
-    margin-top: 10px !important;
-    height: calc(100vh - (60px + 83px)); }
+    margin-top: 20px !important;
+    height: calc(100vh - (60px + 83px + 65px)); }
   #cm2-house {
     right: 0;
     bottom: -100%;
@@ -609,4 +615,12 @@
   .pureSelect_text select {
     padding-right: 20px; }
   .pureSelect_text::after {
-    right: -6px; } }
+    right: -6px; }
+  .market-head.active {
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+    .market-head.active .page-headline_en {
+      display: none; }
+    .market-head.active .products-control {
+      margin-top: 10px;
+      padding-bottom: 10px; } }

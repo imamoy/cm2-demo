@@ -15,13 +15,16 @@
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; } }
+              flex-direction: column; }
+      .input-row > * {
+        margin: 0; } }
 
 .input-group {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin-bottom: 1.6rem; }
+  margin-bottom: 1.6rem;
+  width: 50%; }
   .input-group > * {
     display: block; }
   .input-group label {
@@ -40,6 +43,7 @@
     background-color: transparent; }
   @media screen and (max-width: 767px) {
     .input-group {
+      width: 100%;
       margin-bottom: 1rem; } }
 
 .select__group {
@@ -68,8 +72,16 @@
     border: none;
     background-color: #EEEEEE;
     border-radius: 4px;
-    padding: 4px 10px;
+    padding: 4px 12px;
     font-size: 16px; }
+  .select__group.border-style select.select {
+    border: 1px solid rgba(187, 187, 187, 0.5);
+    background-color: transparent; }
+  .select__group.border-style:before {
+    content: '\e812';
+    font-family: "fontello";
+    font-size: 20px;
+    right: 15px; }
 
 .file-input {
   display: -webkit-inline-box;
@@ -97,7 +109,8 @@
     cursor: pointer;
     margin-right: 8px;
     -webkit-transition: .25s background;
-    transition: .25s background; }
+    transition: .25s background;
+    position: relative; }
     .file-input > .button .img {
       display: inline-block;
       width: 64px;
@@ -107,8 +120,7 @@
       background-image: url("../../images/v2/icon/upload_g.png");
       z-index: 10;
       position: relative; }
-    .file-input > .button::after {
-      content: '上傳檔案';
+    .file-input > .button .wording {
       display: inline-block;
       font-size: 16px;
       border: 1px solid rgba(187, 187, 187, 0.5);
@@ -117,12 +129,13 @@
       -webkit-transform: translateY(-54%);
               transform: translateY(-54%);
       margin-left: -20px;
-      z-index: -1;
+      z-index: 5;
       -webkit-transition: .25s color;
-      transition: .25s color; }
+      transition: .25s color;
+      position: relative; }
   .file-input:hover > .button .img {
     background-image: url("../../images/v2/icon/upload_o.png"); }
-  .file-input:hover > .button::after {
+  .file-input:hover > .button .wording {
     border: 1px solid rgba(238, 131, 62, 0.5);
     color: #EE833E; }
   .file-input > .label {

@@ -72,7 +72,13 @@
                   <div class="input-row">
                     <div class="input-group style2">
                       <label>居住地區</label>
-                      <input type="text">
+                      <div class="select__group border-style">
+                        <select class="select">
+                          <option value="請選擇">請選擇</option>
+                          <option value="台北市">台北市</option>
+                          <option value="新北市">新北市</option>
+                        </select>
+                      </div>
                     </div>
                     <div class="input-group style2">
                       <label>郵遞區號</label>
@@ -88,7 +94,13 @@
                   <div class="input-row">
                     <div class="input-group style2">
                       <label>身份證類別</label>
-                      <input type="text">
+                      <div class="select__group border-style">
+                        <select class="select">
+                          <option value="請選擇">請選擇</option>
+                          <option value="身份1">身份1</option>
+                          <option value="身份2">身份2</option>
+                        </select>
+                      </div>
                     </div>
                     <div class="input-group style2">
                       <label>身份證字號</label>
@@ -105,7 +117,8 @@
                     <div>
                       <p class="mb-20"> 請將證件拿在手中一起入鏡，上面寫著'CM2'與今天的日期 'DD-MOM-YYYY'，請確保臉是清晰可見的。 <br><span class="t-primary">* 必需上載本人與證件相片</span></p>
                       <div class="file-input mt-30">
-                        <input type="file"><span class="button"><span class="img"></span></span><span class="label" data-js-label="">未選擇任何檔案</span>
+                        <input type="file" id="uploadFile">
+                        <label class="button" for="uploadFile"><span class="img"></span><span class="wording">上傳檔案</span></label><span class="label">未選擇任何檔案</span>
                       </div>
                     </div>
                   </div>
